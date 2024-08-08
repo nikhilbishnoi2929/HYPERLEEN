@@ -33,7 +33,6 @@ module.exports = {
         gilroy: ["Gilroy", "sans-serif"]
       },
       fontSize:{
-
         "10xl": "16px",
         "11xl": "32px",
         "12xl": "80px"
