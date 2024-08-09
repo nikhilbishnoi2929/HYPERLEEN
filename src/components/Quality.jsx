@@ -2,9 +2,9 @@ import React from 'react'
 
 const Quality = () => {
   return (
-    <div>
-      quality
-    </div>
+ <div>
+<div className="container"></div>
+ </div>
   )
 }
 
