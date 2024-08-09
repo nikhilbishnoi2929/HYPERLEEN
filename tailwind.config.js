@@ -18,6 +18,7 @@ module.exports = {
         },
       },
       screens: {
+        xsm: '400px',
         sm: "576px",
         md: "768px",
         lg: "992px",
@@ -27,15 +28,27 @@ module.exports = {
       colors: {
         textBlue: "#084CAF",
         textGray: "#4E4E4E",
+        ligh_grey: '#0101010D'
       },
-      fontFamily:{
+      fontFamily: {
         poppins: ["poppins", "sans-serif"],
         gilroy: ["Gilroy", "sans-serif"]
       },
-      fontSize:{
+      fontSize: {
         "10xl": "16px",
         "11xl": "32px",
         "12xl": "80px"
+      },
+      backgroundImage: {
+        ourTeam: 'url("./assets/images/webp/our-team-img.webp")',
+      },
+      boxShadow: {
+        mediaIcon: '0px 4px 4px 0px #00000040',
+        whiteBox: '-4.11px 4.11px 18.66px -9.7px #6F69F21F, 4.11px -4.29px 112.6px -10px #084CAF14',
+        buttonShdow: '4px 4px 20px 0px #084CAF4D'
+      },
+      backgroundSize: {
+        full: "100% 100%",
       },
     },
   },
