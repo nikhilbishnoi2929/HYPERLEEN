@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FAQS } from '../common/helper';
+import { FAQS } from '../common/Helper';
 
 
 const Faqs = () => {
