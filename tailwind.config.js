@@ -28,16 +28,24 @@ module.exports = {
         textBlue: "#084CAF",
         textGray: "#4E4E4E",
       },
-      fontFamily:{
+      fontFamily: {
         poppins: ["poppins", "sans-serif"],
         gilroy: ["Gilroy", "sans-serif"]
       },
-      fontSize:{
-
-        "10xl": "16px",
+      fontSize: {
         "11xl": "32px",
         "12xl": "80px"
       },
+      boxShadow: {
+        "2xl": "4px 4px 20px 0px #084CAF4D",
+      },
+      backgroundImage: {
+        footerBg: `url("./assets/images/webp/footerBg.webp")`,
+      },
+      backgroundSize: {
+        "100%": "100% 100%",
+      },
+      
     },
   },
   plugins: [],

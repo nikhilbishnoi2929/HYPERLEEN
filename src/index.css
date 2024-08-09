@@ -12,3 +12,9 @@
       @apply flex flex-row flex-wrap -mx-3;
   }
 }
+.custom_Duration{
+  transition: all 400ms linear;
+}
+.hover_Effect:hover{
+transform: scale(1.1);
+}
