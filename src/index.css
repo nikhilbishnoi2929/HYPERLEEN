@@ -2,3 +2,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-[1188px] px-6 mx-auto;
+  }
+
+  .row {
+    @apply flex flex-row flex-wrap -mx-3;
+  }
+}
