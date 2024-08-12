@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       container: {
@@ -14,25 +12,25 @@ module.exports = {
           sm: "540px",
           md: "720px",
           lg: "960px",
-          xl: "1140px",
+          xl: "1188px",
         },
       },
       screens: {
-        xsm: '400px',
+        xsm: "400px",
         sm: "576px",
         md: "768px",
         lg: "992px",
         xl: "1200px",
-        '2xl': "1400px",
+        "2xl": "1400px",
       },
       colors: {
-        textBlue: "#084CAF",
-        textGray: "#4E4E4E",
-        ligh_grey: '#0101010D'
+        blue: "#084CAF", // remove text from here
+        gray: "#4E4E4E", // remove text from here
+        light_grey: "#0101010D", // remove text from here
       },
       fontFamily: {
-        poppins: ["poppins", "sans-serif"],
-        gilroy: ["Gilroy", "sans-serif"]
+        // remove font faimly poppins here
+        gilroy: ["Gilroy", "sans-serif"],
       },
       fontSize: {
         "11xl": "32px",
@@ -41,9 +39,10 @@ module.exports = {
       },
       boxShadow: {
         "2xl": "4px 4px 20px 0px #084CAF4D",
-        mediaIcon: '0px 4px 4px 0px #00000040',
-        whiteBox: '-4.11px 4.11px 18.66px -9.7px #6F69F21F, 4.11px -4.29px 112.6px -10px #084CAF14',
-        buttonShdow: '4px 4px 20px 0px #084CAF4D'
+        mediaIcon: "0px 4px 4px 0px #00000040",
+        whiteBox:
+          "-4.11px 4.11px 18.66px -9.7px #6F69F21F, 4.11px -4.29px 112.6px -10px #084CAF14",
+        buttonShadow: "4px 4px 20px 0px #084CAF4D",
       },
       backgroundImage: {
         footerBg: `url("./assets/images/webp/footerBg.webp")`,
@@ -52,9 +51,7 @@ module.exports = {
       backgroundSize: {
         "100%": "100% 100%",
       },
-      
     },
   },
   plugins: [],
-}
-
+};
