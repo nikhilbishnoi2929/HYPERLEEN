@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       container: {
         padding: {
-          DEFAULT: "12px",
+          DEFAULT: "24px",
         },
         center: true,
         screens: {
