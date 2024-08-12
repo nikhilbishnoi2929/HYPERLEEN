@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { FAQS } from '../common/helper';
+import { FAQS } from '../common/CommonHelper';
 
 const Faqs = () => {
     const [activeIndex, setActiveIndex] = useState(null);

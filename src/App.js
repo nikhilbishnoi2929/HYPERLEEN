@@ -14,8 +14,8 @@ import BottomTop from './components/BottomTop'
 function App() {
   return (
   <div className=' overflow-hidden'>
-  <Header/>
-  <Label/>
+  {/* <Header/> */}
+  {/* <Label/> */}
   <Segmentation/>
   <Team/>
   <System/>
