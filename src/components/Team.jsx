@@ -75,7 +75,7 @@ const Team = () => {
                       <PhnCallImg />
                       <p className='text-blue'>972.215.8214</p>
                     </a>
-                    <a href='tel:90909090' className='flex items-center gap-3 sm:pt-2 hover:underline ease-linear duration-500'>
+                    <a href='mailto:@gmail.com' className='flex items-center gap-3 sm:pt-2 hover:underline ease-linear duration-500'>
                       <MailIcon />
                       <p className='text-blue'>darrin.araki@cbpacific.com</p>
                     </a>
