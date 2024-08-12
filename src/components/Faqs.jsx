@@ -11,7 +11,7 @@ const Faqs = () => {
 
     return (
         <div className='max-w-[997px] container px-3 mx-auto'>
-            <div className='flex justify-center pt-[160px] max-lg:pt-[100px] max-xl:pt-[120px] max-md:pt-[80px] max-sm:pt-12'>
+            <div className='flex justify-center pt-[160px] max-lg:pt-[100px] max-xl:pt-[120px] max-md:pt-[80px] max-sm:pt-16'>
                 <div className='flex flex-col text-center'>
                     <h2 className='font_gilroy_medium font-medium text-blue text-5xl max-lg:text-4xl max-md:text-3xl leading-[57px]'>FAQs</h2>
                     <p className='font-normal text-base text-gray leading-6 max-sm:text-sm pt-4'>You have got Question. We have got Answer</p>

@@ -18,15 +18,13 @@ const Exclusive = () => {
             setError('Please enter a valid email address.');
         } else {
             setError('');
-            // Show SweetAlert2 success message if validation passes
             Swal.fire({
                 position: 'center',
                 icon: 'success',
-                title: 'Your work has been saved',
+                title: 'Mail has been submitted',
                 showConfirmButton: false,
                 timer: 1500
             });
-            // Clear the form after showing the alert
             setEmail('');
         }
     };
@@ -34,18 +32,18 @@ const Exclusive = () => {
     const handleChange = (e) => {
         setEmail(e.target.value);
         if (error) {
-            setError(''); // Hide error when user starts typing
+            setError('');
         }
     };
 
     return (
         <div className='container max-w-[1140px] mx-auto px-3'>
-            <div className='flex justify-center pt-[180px] max-lg:pt-[120px] max-md:pt-[80px] max-sm:pt-12 pb-[29px]'>
+            <div className='flex justify-center pt-[180px] max-lg:pt-[120px] max-md:pt-[90px] max-sm:pt-16 pb-[29px]'>
                 <div className='flex flex-col text-center'>
                     <h2 className='font_gilroy_medium font-medium text-5xl max-lg:text-4xl max-sm:text-2xl max-sm:leading-6 leading-[57px] text-black'>
                         Get in touch with <span className='text-blue'>Hyperleen</span>
                     </h2>
-                    <p className='font-poppins max-sm:text-sm font-normal text-base leading-6 text-gray max-w-[731px] opacity-70 pt-6'>
+                    <p className='max-sm:text-sm font-normal text-base leading-6 text-gray max-w-[731px] opacity-70 pt-6'>
                         Take your experience a step further! Subscribe to our monthly newsletter for exclusive access to discounts, promotions, Hyperleen events, and more. We’d hate to be annoying, please unsubscribe anytime!
                     </p>
                     <div>

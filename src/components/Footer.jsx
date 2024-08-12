@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className='bg-footerBg bg-100% max-lg:bg-cover bg-no-repeat'>
             <div className='container max-w-[1164px] mx-auto px-3'>
-                <div className='row pt-[160px] max-lg:pt-[120px] max-md:pt-[100px] max-sm:pt-[70px] pb-[56px]'>
+                <div className='row pt-[160px] max-lg:pt-[120px] max-md:pt-[100px] max-sm:pt-[80px] pb-[56px]'>
                     <div className='lg:w-4/12 w-full px-3 flex'>
                         <div className='flex flex-col'>
                             <img className='w-full h-[135px] max-w-[117px]' src={logoPage} alt="logoPage" />
