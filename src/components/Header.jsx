@@ -20,9 +20,7 @@ const Header = () => {
               <li className='font-normal text-base leading-6 text-textGray'>Team</li>
               <li className='font-normal text-base leading-6 text-textGray'>FAQs</li>
             </ul>
-
             <div>
-
             </div>
           </div>
         </div>

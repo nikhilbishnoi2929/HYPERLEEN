@@ -26,9 +26,9 @@ module.exports = {
         '2xl': "1400px",
       },
       colors: {
-        Blue: "#084CAF",
-        Gray: "#4E4E4E",
-        lightGrey: '#0101010D'
+        textBlue: "#084CAF",
+        textGray: "#4E4E4E",
+        ligh_grey: '#0101010D'
       },
       fontFamily: {
         poppins: ["poppins", "sans-serif"],

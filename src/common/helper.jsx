@@ -32,7 +32,7 @@ export const FAQS = [
             "Data labeling involves annotating or tagging data to make it understandable for machines. It helps AI systems learn and make accurate predictions.",
     },
     {
-        question: "How can I get started with your data labeling service?",
+        question: "How can I get started with yourdata labeling service?",
         answer:
             "Data labeling involves annotating or tagging data to make it understandable for machines. It helps AI systems learn and make accurate predictions.",
     },
