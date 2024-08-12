@@ -1,6 +1,6 @@
 import React from 'react';
 import logoPage from '../assets/images/webp/logoPage.webp';
-import { FOOTER_CONTACT, FOOTER_FOLLOW, FOOTER_ITEM_FIRST, FOOTER_ITEMS, FOOTER_LINKS, FOOTER_POLICY, FOOTER_TEAM } from '../common/helper';
+import { FOOTER_CONTACT, FOOTER_FOLLOW, FOOTER_ITEM_FIRST, FOOTER_ITEMS, FOOTER_LINKS, FOOTER_POLICY, FOOTER_TEAM } from '../common/Helper';
 import { FACEBOOK, IN_LINK, INSTAGRAM, TWITTER } from '../common/Icon';
 const Footer = () => {
     return (
@@ -79,29 +79,29 @@ const Footer = () => {
                                 )}
                             </ul>
                             <div className=' pt-5 gap-3 max-sm:gap-5 max-sm:flex-col flex'>
-                               <div className=' flex gap-3 max-sm:gap-5'>
-                               <a href="https://www.facebook.com/" target='blank_'>
-                                    <div className=' size-[32px] rounded-[50px] border-[1px] border-textBlue hover:border-white custom_Duration hover_Effect bg-white flex justify-center items-center'>
-                                        <FACEBOOK />
-                                    </div>
-                                </a>
-                                <a href="https://x.com/?lang=en" target='blank_'>
-                                    <div className=' size-[32px] rounded-[50px] border-[1px] border-textBlue hover:border-white custom_Duration hover_Effect bg-white flex justify-center items-center'>
-                                        <TWITTER />
-                                    </div>
-                                </a>
-                               </div>
                                 <div className=' flex gap-3 max-sm:gap-5'>
-                                <a href="https://www.facebook.com/" target='blank_'>
-                                    <div className=' size-[32px] hover:border-white custom_Duration hover_Effect rounded-[50px] border-[1px] border-textBlue bg-white flex justify-center items-center'>
-                                        <IN_LINK />
-                                    </div>
-                                </a>
-                                <a href="https://www.instagram.com/" target='blank_'>
-                                    <div className=' size-[32px] hover:border-white custom_Duration hover_Effect rounded-[50px] border-[1px] border-textBlue bg-white flex justify-center items-center'>
-                                        <INSTAGRAM />
-                                    </div>
-                                </a>
+                                    <a href="https://www.facebook.com/" target='blank_'>
+                                        <div className=' size-[32px] rounded-[50px] border-[1px] border-textBlue hover:border-white custom_Duration hover_Effect bg-white flex justify-center items-center'>
+                                            <FACEBOOK />
+                                        </div>
+                                    </a>
+                                    <a href="https://x.com/?lang=en" target='blank_'>
+                                        <div className=' size-[32px] rounded-[50px] border-[1px] border-textBlue hover:border-white custom_Duration hover_Effect bg-white flex justify-center items-center'>
+                                            <TWITTER />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className=' flex gap-3 max-sm:gap-5'>
+                                    <a href="https://www.facebook.com/" target='blank_'>
+                                        <div className=' size-[32px] hover:border-white custom_Duration hover_Effect rounded-[50px] border-[1px] border-textBlue bg-white flex justify-center items-center'>
+                                            <IN_LINK />
+                                        </div>
+                                    </a>
+                                    <a href="https://www.instagram.com/" target='blank_'>
+                                        <div className=' size-[32px] hover:border-white custom_Duration hover_Effect rounded-[50px] border-[1px] border-textBlue bg-white flex justify-center items-center'>
+                                            <INSTAGRAM />
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
