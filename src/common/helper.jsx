@@ -37,6 +37,33 @@ export const FAQS = [
             "Data labeling involves annotating or tagging data to make it understandable for machines. It helps AI systems learn and make accurate predictions.",
     },
 ];
+
+export const steps = [
+    {
+        icon: <Timeline01 />,
+        title: 'Project request',
+        description:
+            'Send us information about your project and your annotation needs. Our team will work with you to define the Scope of Work and to determine the best way to deliver the results that you require.',
+    },
+    {
+        icon: <Timeline02 />,
+        title: 'Interface setup',
+        description:
+            'Our team will develop a custom interface for your use case and will hand-pick the most suitable workforce based on your requirements in terms of geography, demographics, etc.',
+    },
+    {
+        icon: <Timeline03 />,
+        title: 'Send request',
+        description:
+            'Once the integration is complete, you can start sending requests to our workforce which contain bounding box, tag, polygon assignments, and more.',
+    },
+    {
+        icon: <Timeline04 />,
+        title: 'Receive data',
+        description:
+            'Get the appropriate data annotated.',
+    },
+];
 export const FOOTER_ITEM_FIRST = [
     {
         href: "#Quick Links",
@@ -108,29 +135,4 @@ export const FOOTER_FOLLOW = [
         text: "Follow us on"
     }
 ]
-export const steps = [
-    {
-        icon: <Timeline01 />,
-        title: 'Project request',
-        description:
-            'Send us information about your project and your annotation needs. Our team will work with you to define the Scope of Work and to determine the best way to deliver the results that you require.',
-    },
-    {
-        icon: <Timeline02 />,
-        title: 'Interface setup',
-        description:
-            'Our team will develop a custom interface for your use case and will hand-pick the most suitable workforce based on your requirements in terms of geography, demographics, etc.',
-    },
-    {
-        icon: <Timeline03 />,
-        title: 'Send request',
-        description:
-            'Once the integration is complete, you can start sending requests to our workforce which contain bounding box, tag, polygon assignments, and more.',
-    },
-    {
-        icon: <Timeline04 />,
-        title: 'Receive data',
-        description:
-            'Get the appropriate data annotated.',
-    },
-];
+

@@ -19,13 +19,13 @@ const Faqs = () => {
                 {FAQS.map((faq, index) => (
                     <div
                         key={index}
-                        className={`overflow-hidden ease-linear ${activeIndex === index ? "z-30 bg-[#F3F6FB] rounded-[16px]" : "border-textGray  rounded-[16px] border-[0.5px]"} mt-5`}
+                        className={`overflow-hidden rounded-[16px] ease-linear ${activeIndex === index ? "z-30 bg-[#F3F6FB] rounded-[16px_16px_0px_0px]" : "border-textGray border-[0.5px]"} mt-5`}
                     >
                         <button
                             onClick={() => toggleAccordion(index)}
                             className={`${activeIndex === index ? "z-30 lg:p-[23px] md:p-[19px] p-[15px]" : "p-4 lg:p-[23px] bg-white"} w-full text-left bg-textBlue flex items-center justify-between border-[0.5px] border-[#FFFFFF4D] transition ease-in-out `}
                         >
-                            <span className={`${activeIndex === index ? "text-white" : "text-black"} font-poppins font-medium max-sm:text-sm max-sm:leading-5 text-base z-30 leading-6`}>{faq.question}</span>
+                            <span className={`${activeIndex === index ? "text-white" : "text-black"} font-poppins font-medium max-sm:text-sm max-sm:leading-5 text-base z-30 text-10xl leading-6`}>{faq.question}</span>
                             <span className="float-right z-30">
                                 <div className={`${activeIndex === index ? "transform rotate-180 hidden" : ""} flex justify-center items-center size-6 bg-textBlue rounded-[50px]`}>
                                     <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,7 +43,7 @@ const Faqs = () => {
                             className={`overflow-hidden ease-linear ${activeIndex === index ? "h-auto" : "max-h-0"
                                 }`}
                         >
-                            <div className="font-font_gilroy_regular font-normal text-xl max-sm:text-sm max-md:text-lg max-md:leading-7 max-sm:leading-5 max-w-[821px] leading-7 text-textGray lg:p-[23px] md:p-[19px] p-[15px]">
+                            <div className="font-font_gilroy_regular font-normal text-xl max-sm:text-[16px] max-md:text-lg max-md:leading-[28px] max-sm:leading-[24px] max-w-[821px] leading-[28px] text-textGray lg:p-[23px] md:p-[19px] p-[15px]">
                                 <p>{faq.answer}</p>
                             </div>
                         </div>

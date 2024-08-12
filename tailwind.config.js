@@ -24,12 +24,11 @@ module.exports = {
         "2xl": "1400px",
       },
       colors: {
-        blue: "#084CAF", // remove text from here
-        gray: "#4E4E4E", // remove text from here
-        light_grey: "#0101010D", // remove text from here
+        blue: "#084CAF", 
+        gray: "#4E4E4E", 
+        light_grey: "#0101010D", 
       },
       fontFamily: {
-        // remove font faimly poppins here
         gilroy: ["Gilroy", "sans-serif"],
       },
       fontSize: {
@@ -50,7 +49,9 @@ module.exports = {
       },
       backgroundSize: {
         "100%": "100% 100%",
+      full: "100% 100%",
       },
+      
     },
   },
   plugins: [],

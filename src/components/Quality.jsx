@@ -1,4 +1,4 @@
-import React from 'react'
+
 import dataLabeling from '../assets/images/png/dataLabeling.png';
 import dataLabelingCar from '../assets/images/png/dataLabelingCar.png';
 import checkRight from '../assets/images/svg/checkRight.svg';

@@ -18,13 +18,13 @@ const Team = () => {
           <div className='lg:w-1/2 px-3'>
             <div className='max-w-[560px]  rounded-2xl relative'>
               <div className='shadow-mediaIcon absolute top-0 right-0 border-t-[0.5px] border-r-[0.5px] border-[#084CAF52] max-w-12 py-4 px-2'>
-                <a href='/' className='size-8 bg-textBlue flex items-center justify-center rounded-full'>
+                <a href='/' className='size-8 bg-blue flex items-center justify-center rounded-full'>
                   <LinkedinLogo />
                 </a>
-                <a href='/' className='size-8 bg-textBlue flex items-center justify-center rounded-full mt-4'>
+                <a href='/' className='size-8 bg-blue flex items-center justify-center rounded-full mt-4'>
                   <FacebookLogo />
                 </a>
-                <a href='/' className='size-8 bg-textBlue flex items-center justify-center rounded-full mt-4'>
+                <a href='/' className='size-8 bg-blue flex items-center justify-center rounded-full mt-4'>
                   <InstgramLogo />
                 </a>
               </div>
@@ -38,11 +38,11 @@ const Team = () => {
                   <div className='flex flex-col items-start pt-2'>
                     <a href='tel:90909090' className='flex items-center gap-3 hover:underline ease-linear duration-500'>
                       <PhnCallImg />
-                      <p className='text-textBlue font-poppins'>972.215.8214</p>
+                      <p className='text-blue font-poppins'>972.215.8214</p>
                     </a>
                     <a href='mailto:90909090' className='flex items-center gap-3 sm:pt-2 hover:underline ease-linear duration-500'>
                       <MailIcon />
-                      <p className='text-textBlue font-poppins'>darrin.araki@cbpacific.com</p>
+                      <p className='text-blue font-poppins'>darrin.araki@cbpacific.com</p>
                     </a>
                   </div>
                 </div>
@@ -53,13 +53,13 @@ const Team = () => {
           <div className='lg:w-1/2 px-3 max-lg:mt-3'>
             <div className='max-w-[560px]  rounded-2xl relative'>
               <div className='shadow-mediaIcon absolute top-0 right-0 border-t-[0.5px] border-r-[0.5px] border-[#084CAF52] max-w-12 py-4 px-2'>
-                <a href='/' className='size-8 bg-textBlue flex items-center justify-center rounded-full'>
+                <a href='/' className='size-8 bg-blue flex items-center justify-center rounded-full'>
                   <LinkedinLogo />
                 </a>
-                <a href='/' className='size-8 bg-textBlue flex items-center justify-center rounded-full mt-4'>
+                <a href='/' className='size-8 bg-blue flex items-center justify-center rounded-full mt-4'>
                   <FacebookLogo />
                 </a>
-                <a href='/' className='size-8 bg-textBlue flex items-center justify-center rounded-full mt-4'>
+                <a href='/' className='size-8 bg-blue flex items-center justify-center rounded-full mt-4'>
                   <InstgramLogo />
                 </a>
               </div>
@@ -77,7 +77,7 @@ const Team = () => {
                     </a>
                     <a href='tel:90909090' className='flex items-center gap-3 sm:pt-2 hover:underline ease-linear duration-500'>
                       <MailIcon />
-                      <p className='text-textBlue font-poppins'>darrin.araki@cbpacific.com</p>
+                      <p className='text-blue font-poppins'>darrin.araki@cbpacific.com</p>
                     </a>
                   </div>
                 </div>
