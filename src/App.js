@@ -9,6 +9,7 @@ import Quality from './components/Quality';
 import Segmentation from './components/Segmentation';
 import System from './components/System';
 import Team from './components/Team';
+import BottomTop from './components/BottomTop'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
   <Faqs/>
   <Exclusive/>
   <Footer/>
+<BottomTop/>
   </div>
   );
 }
