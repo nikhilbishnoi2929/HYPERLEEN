@@ -31,7 +31,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className='bg-center bg-cover bg-no-repeat max-w-[1440px]' style={heroBg}>
+      <div className='bg-center bg-100% bg-no-repeat mx-auto' style={heroBg}>
         <div className="container">
           <div className='flex items-center justify-center gap-4'>
             <div className='w-[43px]'>
@@ -56,6 +56,10 @@ const Header = () => {
             </div>
             <h1 className='font-gilroy text-12xl font-medium leading-[80px] text-center pt-11'>Transform Your <span className='text-blue font-gilroy'>Data into AI</span> Insights</h1>
             <p className='text-base leading-6 text-gray mx-auto max-w-[634px] pt-5 text-center'>Unlock the full potential of your AI models with our premium data labeling services. Our expert annotators ensure your data is meticulously labeled, enabling superior performance and insights.</p>
+            <div className='flex items-center gap-3 pt-10 justify-center'>
+              <button className='font-normal text-lg leading-7 text-white w-[151px] h-[55px] bg-blue rounded-[100px] shadow-buttonShadow'>Get Started</button>
+              <button className='font-normal text-base leading-7 text-black w-[150px] h-[55px] rounded-[100px] border-black border-[1px] border-solid'>Try For Free</button>
+            </div>
           </div>
         </div>
       </div>
