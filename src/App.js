@@ -13,19 +13,19 @@ import BottomTop from './components/BottomTop'
 
 function App() {
   return (
-  <div className=' overflow-hidden'>
-  {/* <Header/> */}
-  {/* <Label/> */}
-  <Segmentation/>
-  <Team/>
-  <System/>
-  <Quality/>
-  <Polygon/>
-  <Faqs/>
-  <Exclusive/>
-  <Footer/>
-<BottomTop/>
-  </div>
+    <div className=' overflow-hidden'>
+      <Header />
+      <Label />
+      <Segmentation />
+      <Team />
+      <System />
+      <Quality />
+      <Polygon />
+      <Faqs />
+      <Exclusive />
+      <Footer />
+      <BottomTop />
+    </div>
   );
 }
 
