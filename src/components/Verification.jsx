@@ -4,7 +4,7 @@ import CommonButton from '../common/Button'
 const Verification = () => {
     return (
         <>
-            <div className='container lg:py-[160px] md:py-20 pt-16 pb-0'>
+            <div className='container lg:py-[160px] md:pt-20 pt-16 pb-0'>
                 <div className='row items-center justify-between max-lg:max-w-[600px] max-lg:justify-center max-lg:flex-col max-lg:mx-auto'>
                     <div className='lg:w-1/2 px-3 relative'>
                         <div className='absolute top-0 w-full max-w-[502px]'>
@@ -13,7 +13,7 @@ const Verification = () => {
                         <div className='max-w-[502px]'>
                             <img src={verificationImg} alt="verifiction can or burger img" width={502} height={483} />
                         </div>
-                        <div className='absolute bg-white rounded-2xl sm:p-4 p-2 shadow-whiteBox max-w-[332px] -bottom-10 left-0 md:-translate-x-7 sm:-translate-x-4 -translate-x-3 translate-y-20'>
+                        <div className='absolute bg-white rounded-2xl sm:p-4 p-2 shadow-whiteBox max-w-[332px] -bottom-10 left-0 xl:-translate-x-7 md:translate-x-2 -translate-x-3 translate-y-20'>
                             <h4 className='sm:text-2xl text-xl font-semibold font-gilroy text-center text-black'>Confirm your action</h4>
                             <p className='font-poppins text-center'>Confirm if the segmentation was performed correctly.</p>
                             <div className='flex items-center md:mt-9 sm:mt-7 mt-5 md:gap-4 sm:gap-3 gap-2'>
@@ -24,7 +24,7 @@ const Verification = () => {
                     </div>
                     <div className='lg:w-1/2 px-3  max-lg:mt-36'>
                         <h1 className='font-gilroy text-11xl leading-[43px] font-semibold text-black max-lg:text-center'>Verification</h1>
-                        <p className='text-black font-poppins max-w-[540px] max-lg:text-center'>Verification is a crucial step to ensure the accuracy of the labeled data. It involves reviewing the segmented image to confirm if the segmentation was performed correctly.</p>
+                        <p className='text-black font-poppins max-w-[540px] max-lg:text-center pt-4'>Verification is a crucial step to ensure the accuracy of the labeled data. It involves reviewing the segmented image to confirm if the segmentation was performed correctly.</p>
                         <div className='lg:mt-12 md:mt-8 mt-5 max-lg:flex justify-center'>
                             <CommonButton
                                 text={"Learn more"}
