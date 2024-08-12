@@ -1,5 +1,5 @@
 import React from 'react';
-import { steps } from '../common/Helper';
+import { steps } from '../common/helper';
 
 
 const WorkflowSteps = () => {
@@ -13,8 +13,8 @@ const WorkflowSteps = () => {
             {step.icon}
           </div>
           <div className="ml-4">
-            <h3 className="text-lg font-semibold text-black font-poppins">{step.title}</h3>
-            <p className="mt-2 text-sm text-grey font-poppins">{step.description}</p>
+            <h3 className="text-[20px] leading-7 font-semibold text-black font-poppins">{step.title}</h3>
+            <p className="mt-3 text-sm text-gray font-poppins">{step.description}</p>
           </div>
           {index < steps.length - 1 && (
             <div className="absolute left-6 top-12 h-full border-l-2 border-dotted border-blue-200"></div>
