@@ -1,5 +1,5 @@
 import React from 'react';
-import { steps } from '../common/helper';
+import { steps } from '../common/Helper';
 
 
 const WorkflowSteps = () => {

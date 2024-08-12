@@ -44,8 +44,18 @@ const Header = () => {
           </div>
           <div className='pt-6 max-w-[834px] mx-auto'>
             <div className='flex items-center gap-6'>
-              <div className='text-base font-normal leading-6 text-blue w-[121px] h-[44px] border-[0.5px] border-blue border-solid bg-[#EBEBFD] rounded-[122px] flex justify-center items-center'>Accurate</div>
+              <div className='text-base font-normal leading-6 text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-[#EBEBFD] rounded-[122px] flex justify-center items-center'>Accurate</div>
+
+              <div className='text-base font-normal leading-6 text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-[#EBEBFD] rounded-[122px] flex justify-center items-center'>Scalable</div>
+
+              <div className='text-base font-normal leading-6 text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-[#EBEBFD] rounded-[122px] flex justify-center items-center'>Secure Data</div>
+
+              <div className='text-base font-normal leading-6 text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-[#EBEBFD] rounded-[122px] flex justify-center items-center'>Labeling Solutions</div>
+
+              <div className='text-base font-normal leading-6 text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-[#EBEBFD] rounded-[122px] flex justify-center items-center'>Quality Work</div>
             </div>
+            <h1 className='font-gilroy text-12xl font-medium leading-[80px] text-center pt-11'>Transform Your <span className='text-blue font-gilroy'>Data into AI</span> Insights</h1>
+            <p className='text-base leading-6 text-gray mx-auto max-w-[634px] pt-5 text-center'>Unlock the full potential of your AI models with our premium data labeling services. Our expert annotators ensure your data is meticulously labeled, enabling superior performance and insights.</p>
           </div>
         </div>
       </div>
