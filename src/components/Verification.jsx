@@ -8,7 +8,7 @@ const Verification = () => {
                 <div className='row items-center justify-between max-lg:max-w-[600px] max-lg:justify-center max-lg:flex-col max-lg:mx-auto'>
                     <div className='lg:w-1/2 px-3 relative'>
                         <div className='absolute top-0 w-full max-w-[502px]'>
-                            <h3 className='sm:py-8 py-5 px-7 text-white md:text-11xl sm:text-3xl xsm:text-2xl text-xl sm:eading-[43px]'>Is Previous Selected Object is Correct?</h3>
+                            <h3 className='sm:py-8  px-7 py-5 text-white md:text-11xl sm:text-3xl xsm:text-2xl text-xl sm:eading-[43px]'>Is Previous Selected Object is Correct?</h3>
                         </div>
                         <div className='max-w-[502px]'>
                             <img src={verificationImg} alt="verifiction can or burger img" width={502} height={483} />

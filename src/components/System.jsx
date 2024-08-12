@@ -31,12 +31,11 @@ const System = () => {
           </div>
 
           <div className='lg:w-1/2 px-3 max-lg:mt-5'>
-            <WorkflowSteps />
+             <WorkflowSteps />
           </div>
         </div>
       </div>
     </div>
   )
 }
-
 export default System
