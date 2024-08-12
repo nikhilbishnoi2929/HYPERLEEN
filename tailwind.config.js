@@ -24,9 +24,9 @@ module.exports = {
         "2xl": "1400px",
       },
       colors: {
-        blue: "#084CAF", // remove text from here
-        gray: "#4E4E4E", // remove text from here
-        light_grey: "#0101010D", // remove text from here
+        blue: "#084CAF", 
+        gray: "#4E4E4E", 
+        light_grey: "#0101010D", 
       },
       fontFamily: {
         gilroy: ["Gilroy", "sans-serif"],
@@ -37,11 +37,9 @@ module.exports = {
         "10xl": "16px",
       },
       boxShadow: {
-        "2xl": "4px 4px 20px 0px #084CAF4D",
-        mediaIcon: "0px 4px 4px 0px #00000040",
-        whiteBox:
-          "-4.11px 4.11px 18.66px -9.7px #6F69F21F, 4.11px -4.29px 112.6px -10px #084CAF14",
-        buttonShadow: "4px 4px 20px 0px #084CAF4D",
+        mediaIcon: '0px 4px 4px 0px #00000040',
+        whiteBox: '-4.11px 4.11px 18.66px -9.7px #6F69F21F, 4.11px -4.29px 112.6px -10px #084CAF14',
+        buttonShdow: '4px 4px 20px 0px #084CAF4D'
       },
       backgroundImage: {
         footerBg: `url("./assets/images/webp/footerBg.webp")`,
@@ -49,7 +47,9 @@ module.exports = {
       },
       backgroundSize: {
         "100%": "100% 100%",
+      full: "100% 100%",
       },
+      
     },
   },
   plugins: [],
