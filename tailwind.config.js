@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       container: {
         padding: {
-          DEFAULT: "12px",
+          DEFAULT: "24px",
         },
         center: true,
         screens: {
@@ -18,6 +18,7 @@ module.exports = {
         },
       },
       screens: {
+        xsm: '400px',
         sm: "576px",
         md: "768px",
         lg: "992px",
@@ -27,6 +28,7 @@ module.exports = {
       colors: {
         textBlue: "#084CAF",
         textGray: "#4E4E4E",
+        ligh_grey: '#0101010D'
       },
       fontFamily: {
         poppins: ["poppins", "sans-serif"],
@@ -34,13 +36,18 @@ module.exports = {
       },
       fontSize: {
         "11xl": "32px",
-        "12xl": "80px"
+        "12xl": "80px",
+        "10xl": "16px",
       },
       boxShadow: {
         "2xl": "4px 4px 20px 0px #084CAF4D",
+        mediaIcon: '0px 4px 4px 0px #00000040',
+        whiteBox: '-4.11px 4.11px 18.66px -9.7px #6F69F21F, 4.11px -4.29px 112.6px -10px #084CAF14',
+        buttonShdow: '4px 4px 20px 0px #084CAF4D'
       },
       backgroundImage: {
         footerBg: `url("./assets/images/webp/footerBg.webp")`,
+        ourTeam: 'url("./assets/images/webp/our-team-img.webp")',
       },
       backgroundSize: {
         "100%": "100% 100%",

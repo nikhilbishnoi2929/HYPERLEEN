@@ -5,11 +5,11 @@
 
 @layer components {
   .container {
-      @apply max-w-[1188px] px-6 mx-auto;
+    @apply max-w-[1188px] px-6 mx-auto;
   }
 
   .row {
-      @apply flex flex-row flex-wrap -mx-3;
+    @apply flex flex-row flex-wrap -mx-3;
   }
 }
 .custom_Duration{
