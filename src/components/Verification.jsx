@@ -1,17 +1,17 @@
-import VerificitionImg from '../assets/images/webp/verification-img.webp'
+import verificationImg from '../assets/images/webp/verification-img.webp'
 import CommonButton from '../common/Button'
 
 const Verification = () => {
     return (
         <>
-            <div className='container pb-[160px]'>
+            <div className='container lg:py-[160px] md:py-20 pt-16 pb-0'>
                 <div className='row items-center justify-between max-lg:max-w-[600px] max-lg:justify-center max-lg:flex-col max-lg:mx-auto'>
                     <div className='lg:w-1/2 px-3 relative'>
                         <div className='absolute top-0 w-full max-w-[502px]'>
                             <h3 className='sm:py-8 py-5 px-7 text-white md:text-11xl sm:text-3xl xsm:text-2xl text-xl sm:eading-[43px]'>Is Previous Selected Object is Correct?</h3>
                         </div>
                         <div className='max-w-[502px]'>
-                            <img src={VerificitionImg} alt="verifiction can or burger img" width={502} height={483} />
+                            <img src={verificationImg} alt="verifiction can or burger img" width={502} height={483} />
                         </div>
                         <div className='absolute bg-white rounded-2xl sm:p-4 p-2 shadow-whiteBox max-w-[332px] -bottom-10 left-0 md:-translate-x-7 sm:-translate-x-4 -translate-x-3 translate-y-20'>
                             <h4 className='sm:text-2xl text-xl font-semibold font-gilroy text-center text-black'>Confirm your action</h4>

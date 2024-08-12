@@ -6,32 +6,33 @@ import WorkflowSteps from './Timeline'
 
 const System = () => {
   return (
-    <div className='container'>
-      <div className='row'>
-        <div className='lg:w-1/2 px-3'>
-          <h1 className='font-gilroy font-semibold text-5xl leading-[57px] text-black'>How the <span className='text-textBlue'>System</span> Works</h1>
-          <p className='font-poppins text-textGray max-w-[528px] pt-4'>Effortless Data Labeling: Streamlined, Accurate, and Scalable Solutions for AI Development</p>
-
-          <div className='p-5 rounded-2xl border border-black relative max-w-[400px] mt-10'>
-            <h1 className='font-poppins font-semibold text-black'>Project Request</h1>
-            <div className='p-4 rounded-2xl bg-ligh_grey mt-5'>
-              <img src={carImg} alt="car img" />
-            </div>
-            <div className='border p-4 rounded-lg border-grey mt-4'>
-              <div className='flex items-center gap-3'>
-                <p className=' font-poppins text-black opacity-40'>Car...</p>
-                <PenIcon />
+    <div className='lg:py-[160px] md:py-20 pb-16 pt-0'>
+      <div className='container'>
+        <div className='row items-end justify-center'>
+          <div className='lg:w-1/2 px-3'>
+            <h1 className='font-gilroy font-semibold md:text-5xl text-4xl md:leading-[57px] leading-10 text-black'>How the <span className='text-textBlue'>System</span> Works</h1>
+            <p className='font-poppins text-textGray max-w-[528px] pt-4'>Effortless Data Labeling: Streamlined, Accurate, and Scalable Solutions for AI Development</p>
+            <div className='p-5 rounded-2xl border border-black relative max-w-[400px] mt-10'>
+              <h1 className='font-poppins font-semibold text-black'>Project Request</h1>
+              <div className='p-4 rounded-2xl bg-ligh_grey mt-5'>
+                <img src={carImg} alt="car img" />
+              </div>
+              <div className='border p-4 rounded-lg border-grey mt-4'>
+                <div className='flex items-center gap-3'>
+                  <p className=' font-poppins text-black opacity-40'>Car...</p>
+                  <PenIcon />
+                </div>
               </div>
             </div>
+            <div className='relative right-0 top-0 shadow-whiteBox py-7 px-6 bg-white z-30 rounded-2xl max-w-[381px] w-full sm:translate-x-[140px] sm:-translate-y-[90px] max-sm:mt-4'>
+              <img src={projectReq} alt="project req" className='pointer-events-none' />
+            </div>
+            <div className='max-sm:mt-5'>  <CommonButton text={'Get Started Now'} /></div>
           </div>
-          <div className='relative right-0 top-0 shadow-whiteBox py-7 px-6 bg-white z-30 rounded-2xl max-w-[381px] w-full sm:translate-x-[140px] sm:-translate-y-[90px]'>
-            <img src={projectReq} alt="project req" className='pointer-events-none' />
-          </div>
-          <CommonButton text={'Get Started Now'} />
-        </div>
 
-        <div className='lg:w-1/2 px-3'>
-          <WorkflowSteps />
+          <div className='lg:w-1/2 px-3 max-lg:mt-4'>
+            <WorkflowSteps />
+          </div>
         </div>
       </div>
     </div>

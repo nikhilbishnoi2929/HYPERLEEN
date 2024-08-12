@@ -37,7 +37,77 @@ export const FAQS = [
             "Data labeling involves annotating or tagging data to make it understandable for machines. It helps AI systems learn and make accurate predictions.",
     },
 ];
+export const FOOTER_ITEM_FIRST = [
+    {
+        href: "#Quick Links",
+        text: "Quick Links",
+    }
+]
+export const FOOTER_POLICY = [
+    {
+        href: "#Policy",
+        text: "Policy",
+    }
+]
+export const FOOTER_ITEMS = [
+    {
+        href: "#home",
+        text: "Home",
+    },
+    {
+        href: "#aboutUs",
+        text: "About Us",
+    },
+    {
+        href: "#portfolio",
+        text: "Services",
+    },
+    {
+        href: "#services",
+        text: "FAQ",
+    },
+    {
+        href: "#testimonial",
+        text: "How it Works",
+    },
+];
 
+export const FOOTER_CONTACT = [
+    {
+        href: "#Contact Us",
+        text: "Contact Us",
+    },
+    {
+        href: "#Privacy Policy",
+        text: "Privacy Policy",
+    },
+    {
+        href: "#Terms and conditions",
+        text: "Terms and conditions",
+    },
+];
+export const FOOTER_LINKS = [
+    {
+        href: "#Links",
+        text: "Links",
+    }
+]
+export const FOOTER_TEAM = [
+    {
+        href: "#Team",
+        text: "Team",
+    },
+    {
+        href: "#Label",
+        text: "Label",
+    },
+];
+export const FOOTER_FOLLOW = [
+    {
+        href: "#Follow us on",
+        text: "Follow us on"
+    }
+]
 export const steps = [
     {
         icon: <Timeline01 />,
