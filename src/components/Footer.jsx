@@ -6,14 +6,14 @@ const Footer = () => {
     return (
         <div className='bg-footerBg bg-100% max-lg:bg-cover bg-no-repeat'>
             <div className='container max-w-[1164px] mx-auto px-3'>
-                <div className='row pt-[160px] max-lg:pt-[120px] max-md:pt-[100px] pb-[56px]'>
-                    <div className='lg:w-4/12 w-full px-3 max-lg:justify-center flex'>
-                        <div className='flex flex-col max-lg:text-center max-lg:items-center '>
+                <div className='row pt-[160px] max-lg:pt-[120px] max-md:pt-[100px] max-sm:pt-[70px] pb-[56px]'>
+                    <div className='lg:w-4/12 w-full px-3 flex'>
+                        <div className='flex flex-col'>
                             <img className='w-full h-[135px] max-w-[117px]' src={logoPage} alt="logoPage" />
-                            <p className='font-poppins pt-5 max-sm:text-sm font-normal text-base leading-6 text-white lg:max-w-[279px] max-w-[390px] opacity-70'>Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.</p>
+                            <p className='font-poppins pt-5 max-sm:text-sm font-normal text-base leading-6 text-white lg:max-w-[279px] opacity-70'>Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.</p>
                         </div>
                     </div>
-                    <div className='lg:w-2/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 justify-center max-lg:text-center px-3 flex lg:justify-end'>
+                    <div className='lg:w-2/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-end'>
                         <ul className='lg:pr-3'>
                             {FOOTER_ITEM_FIRST.map((item, index) =>
                                 <li key={index}>
@@ -31,7 +31,7 @@ const Footer = () => {
                             )}
                         </ul>
                     </div>
-                    <div className='lg:w-1/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 justify-center max-lg:text-center px-3 flex lg:justify-end'>
+                    <div className='lg:w-1/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-end'>
                         <ul>
                             {FOOTER_LINKS.map((item, index) =>
                                 <li key={index}>
@@ -49,7 +49,7 @@ const Footer = () => {
                             )}
                         </ul>
                     </div>
-                    <div className='lg:w-3/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 justify-center max-lg:text-center px-3 flex lg:justify-center'>
+                    <div className='lg:w-3/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-center'>
                         <ul className='lg:pl-2'>
                             {FOOTER_POLICY.map((item, index) =>
                                 <li key={index}>
@@ -67,7 +67,7 @@ const Footer = () => {
                             )}
                         </ul>
                     </div>
-                    <div className='lg:w-2/12 md:w-3/12 sm:w-full w-6/12 justify-center max-lg:pt-8 max-lg:text-center px-3 flex lg:justify-end'>
+                    <div className='lg:w-2/12 md:w-3/12 sm:w-full w-6/12 max-lg:pt-8 px-3 flex lg:justify-end'>
                         <div className=' flex-col flex'>
                             <ul>
                                 {FOOTER_FOLLOW.map((item, index) =>
