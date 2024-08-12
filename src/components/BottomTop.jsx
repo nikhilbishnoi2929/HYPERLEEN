@@ -30,7 +30,7 @@ const BottomTop = () => {
           onClick={scrollToTop}
           className=''
         >
-          <img className='size-16' src={arrowTop} />
+          <img className='size-16 hover:animate-bounce' src={arrowTop} />
         </button>
       )}
     </div>

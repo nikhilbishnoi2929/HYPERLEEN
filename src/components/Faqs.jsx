@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { FAQS } from '../common/Helper';
+import { FAQS } from '../common/helper';
+
+
 const Faqs = () => {
     const [activeIndex, ACCORDION_INDEX] = useState(null);
     const toggleAccordion = (index) => {

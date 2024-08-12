@@ -12,7 +12,7 @@ import arrowDot from '../assets/images/svg/arrowDots.svg';
 import arrowDotTwo from '../assets/images/svg/arrowDotTwo.svg';
 import checkMinus from '../assets/images/svg/crossMinus.svg'
 const Quality = () => {
-  return (
+  return (    
     <div className='container max-w-[1164px] px-3 mx-auto'>
       <div className=' flex justify-center pt-[160px] max-lg:pt-[120px] max-md:pt-[80px] max-sm:pt-12 '>
         <div className='flex flex-col text-center'>
