@@ -9,10 +9,10 @@ const Faqs = () => {
     };
     return (
         <div className='max-w-[997px] container px-3 mx-auto'>
-            <div className='flex justify-center pt-[160px] max-lg:pt-[100px] max-md:pt-[80px] max-sm:pt-12'>
+            <div className='flex justify-center pt-[160px] max-lg:pt-[100px] max-xl:pt-[120px] max-md:pt-[80px] max-sm:pt-12'>
                 <div className='flex flex-col text-center'>
                     <h2 className='font_gilroy_medium font-medium text-textBlue text-5xl max-lg:text-4xl max-md:text-3xl leading-[57px] '>FAQs</h2>
-                    <p className='font-poppins font-normal text-10xl text-textGray leading-6 max-sm:text-sm pt-4'>You have got Question.  We have got Answer</p>
+                    <p className='font-poppins font-normal text-base text-textGray leading-6 max-sm:text-sm pt-4'>You have got Question.  We have got Answer</p>
                 </div>
             </div>
             <div className='z-30 max-w-[997px] mx-auto lg:pt-10 max-md:pt-8 max-sm:pt-6 max-lg:pt-10 pt-14' data-aos="zoom-in-up">

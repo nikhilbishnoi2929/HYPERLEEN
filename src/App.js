@@ -1,6 +1,7 @@
 import './App.css';
 import Exclusive from './components/Exclusive';
 import Faqs from './components/Faqs';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Label from './components/Label';
 import Polygon from './components/Polygon';
@@ -11,17 +12,18 @@ import Team from './components/Team';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Label />
-      <Segmentation />
-      <Team />
-      <System />
-      {/* <Quality/> */}
-      <Polygon />
-      <Faqs />
-      <Exclusive />
-    </>
+  <div className=' overflow-hidden'>
+  <Header/>
+  <Label/>
+  <Segmentation/>
+  <Team/>
+  <System/>
+  <Quality/>
+  <Polygon/>
+  <Faqs/>
+  <Exclusive/>
+  <Footer/>
+  </div>
   );
 }
 
