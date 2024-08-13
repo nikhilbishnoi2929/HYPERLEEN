@@ -43,7 +43,7 @@ const Faqs = () => {
                         </button>
                         <div
                             ref={el => contentRefs.current[index] = el}
-                            className={`transition-max-height duration-500 ease-in-out overflow-hidden ${activeIndex === index ? "max-h-[1000px] py-4" : "max-h-0 py-0"}`}
+                            className={`transition-max-height duration-500 ease-in-out overflow-hidden ${activeIndex === index ? "max-h-[1000px]" : "max-h-0 py-0"}`}
                             style={{
                                 maxHeight: activeIndex === index ? `${contentRefs.current[index]?.scrollHeight}px` : '0px',
                             }}
