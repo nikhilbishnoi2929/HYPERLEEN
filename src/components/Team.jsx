@@ -1,6 +1,6 @@
-import manImg from '../assets/images/webp/out-team-man-img.webp'
-import womenImg from '../assets/images/webp/out-team-women-img.webp'
-import ellipsImg from '../assets/images/webp/out-team-ellips.png'
+import manImg from '../assets/images/webp/our-team-man-img.webp'
+import womenImg from '../assets/images/webp/our-team-women-img.webp'
+import ellipsImg from '../assets/images/webp/our-team-ellips.webp'
 import { FacebookLogo, InstgramLogo, LinkedinLogo, MailIcon, PhnCallImg } from '../common/Icon'
 
 const Team = () => {
