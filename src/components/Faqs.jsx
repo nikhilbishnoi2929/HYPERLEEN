@@ -1,21 +1,23 @@
-import React, { useState } from 'react'
-import { FAQS } from '../common/Helper';
-
+import React, { useState, useRef } from 'react';
+import { FAQS } from '../common/CommonHelper';
 
 const Faqs = () => {
-    const [activeIndex, ACCORDION_INDEX] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(null);
+    const contentRefs = useRef([]);
+
     const toggleAccordion = (index) => {
-        ACCORDION_INDEX(activeIndex === index ? null : index);
+        setActiveIndex(activeIndex === index ? null : index);
     };
+
     return (
         <div className='max-w-[997px] container px-3 mx-auto'>
-            <div className='flex justify-center pt-[160px] max-lg:pt-[100px] max-xl:pt-[120px] max-md:pt-[80px] max-sm:pt-12'>
+            <div className='flex justify-center pt-[160px] max-lg:pt-[100px] max-xl:pt-[120px] max-md:pt-[80px] max-sm:pt-16'>
                 <div className='flex flex-col text-center'>
-                    <h2 className='font_gilroy_medium font-medium text-blue text-5xl max-lg:text-4xl max-md:text-3xl leading-[57px] '>FAQs</h2>
-                    <p className='font-poppins font-normal text-base text-gray leading-6 max-sm:text-sm pt-4'>You have got Question.  We have got Answer</p>
+                    <h2 className='font_gilroy_medium font-medium text-blue text-5xl max-lg:text-4xl max-md:text-3xl leading-[57px]'>FAQs</h2>
+                    <p className='font-normal text-base text-gray leading-6 max-sm:text-sm pt-4'>You have got Question. We have got Answer</p>
                 </div>
             </div>
-            <div className='z-30 max-w-[997px] mx-auto lg:pt-10 max-md:pt-8 max-sm:pt-6 max-lg:pt-10 pt-14' data-aos="zoom-in-up">
+            <div className='z-30 max-w-[997px] mx-auto lg:pt-10 max-md:pt-8 max-sm:pt-6 max-lg:pt-10 pt-14'>
                 {FAQS.map((faq, index) => (
                     <div
                         key={index}
@@ -23,9 +25,9 @@ const Faqs = () => {
                     >
                         <button
                             onClick={() => toggleAccordion(index)}
-                            className={`${activeIndex === index ? "z-30 lg:p-[23px] md:p-[19px] p-[15px]" : "p-4 lg:p-[23px] bg-white"} w-full text-left bg-blue flex items-center justify-between border-[0.5px] border-[#FFFFFF4D] transition ease-in-out `}
+                            className={`${activeIndex === index ? "z-30 lg:p-[23px] md:p-[19px] p-[15px]" : "p-4 lg:p-[23px] bg-white"} w-full text-left bg-blue flex items-center justify-between border-[0.5px] border-[#FFFFFF4D] transition ease-in-out`}
                         >
-                            <span className={`${activeIndex === index ? "text-white" : "text-black"} font-poppins font-medium max-sm:text-sm max-sm:leading-5 text-base z-30 text-10xl leading-6`}>{faq.question}</span>
+                            <span className={`${activeIndex === index ? "text-white" : "text-black"} font-medium max-sm:text-sm max-sm:leading-5 text-base z-30 text-10xl leading-6`}>{faq.question}</span>
                             <span className="float-right z-30">
                                 <div className={`${activeIndex === index ? "transform rotate-180 hidden" : ""} flex justify-center items-center size-6 bg-blue rounded-[50px]`}>
                                     <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,8 +42,11 @@ const Faqs = () => {
                             </span>
                         </button>
                         <div
-                            className={`overflow-hidden ease-linear ${activeIndex === index ? "h-auto" : "max-h-0"
-                                }`}
+                            ref={el => contentRefs.current[index] = el}
+                            className={`transition-max-height duration-500 ease-in-out overflow-hidden ${activeIndex === index ? "max-h-[1000px] py-4" : "max-h-0 py-0"}`}
+                            style={{
+                                maxHeight: activeIndex === index ? `${contentRefs.current[index]?.scrollHeight}px` : '0px',
+                            }}
                         >
                             <div className="font-font_gilroy_regular font-normal text-xl max-sm:text-sm max-md:text-lg max-md:leading-7 max-sm:leading-5 max-w-[821px] leading-7 text-gray lg:p-[23px] md:p-[19px] p-[15px]">
                                 <p>{faq.answer}</p>
@@ -51,7 +56,7 @@ const Faqs = () => {
                 ))}
             </div>
         </div>
-    )
+    );
 }
 
-export default Faqs
+export default Faqs;

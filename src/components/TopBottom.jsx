@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import arrowTop from '../assets/images/png/arrowTop.png'
-const BottomTop = () => {
+
+const TopBottom = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
@@ -28,13 +28,13 @@ const BottomTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className=''
+          className="p-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-700 transition duration-300"
         >
-          <img className='size-16 hover:animate-bounce' src={arrowTop} />
+          ↑
         </button>
       )}
     </div>
   );
 };
 
-export default BottomTop;
+export default TopBottom;

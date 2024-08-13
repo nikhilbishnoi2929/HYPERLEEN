@@ -10,19 +10,11 @@ import Segmentation from "./components/Segmentation";
 import System from "./components/System";
 import Team from "./components/Team";
 import BottomTop from "./components/BottomTop";
-import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className=" overflow-hidden">
       <Header />
-      <Routes>
-        <Route path="/label" element={<Label />} />
-        <Route path="/about-us" element={<Segmentation />} />
-        <Route path="/how-it-work" element={<Quality />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/faq" element={<Faqs />} />
-      </Routes>
       <Label />
       <Segmentation />
       <Team />

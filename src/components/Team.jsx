@@ -46,7 +46,7 @@ const Team = () => {
                     </a>
                   </div>
                 </div>
-                <p className=' text-black pt-6'>Sarah Thompson brings over five years of experience in data labeling and annotation to our team. With a keen eye for detail and a passion for precision, Sarah leads our team of annotators, ensuring every piece of data is meticulously labeled and verified.</p>
+                <p className='font-poppins text-black pt-6'>Sarah Thompson brings over five years of experience in data labeling and annotation to our team. With a keen eye for detail and a passion for precision, Sarah leads our team of annotators, ensuring every piece of data is meticulously labeled and verified.</p>
               </div>
             </div>
           </div>
@@ -73,7 +73,7 @@ const Team = () => {
                   <div className='flex flex-col items-start pt-2'>
                     <a href='tel:90909090' className='flex items-center gap-3 hover:underline ease-linear duration-500'>
                       <PhnCallImg />
-                      <p className='text-blue'>972.215.8214</p>
+                      <p className='text-textBlue font-poppins'>972.215.8214</p>
                     </a>
                     <a href='mailto:@gmail.com' className='flex items-center gap-3 sm:pt-2 hover:underline ease-linear duration-500'>
                       <MailIcon />
@@ -81,7 +81,7 @@ const Team = () => {
                     </a>
                   </div>
                 </div>
-                <p className='text-black pt-6'>Sarah Thompson brings over five years of experience in data labeling and annotation to our team. With a keen eye for detail and a passion for precision, Sarah leads our team of annotators, ensuring every piece of data is meticulously labeled and verified.</p>
+                <p className='font-poppins text-black pt-6'>Sarah Thompson brings over five years of experience in data labeling and annotation to our team. With a keen eye for detail and a passion for precision, Sarah leads our team of annotators, ensuring every piece of data is meticulously labeled and verified.</p>
               </div>
             </div>
           </div>
