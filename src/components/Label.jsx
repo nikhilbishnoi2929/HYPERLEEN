@@ -1,18 +1,42 @@
-import React from 'react'
+import ImagePicker from '../components/ImagePicker'
+import overviewImg1 from '../assets/images/webp/overview-one.webp'
+import overviewImg2 from '../assets/images/webp/overview-two.webp'
+import overviewImg3 from '../assets/images/webp/overview-three.webp'
 
 const Label = () => {
   return (
-    <div>
+    <div className='pt-[89px] pb-[160px]'>
       <div className="container">
-        <div className="row">
-          <div className="w-5/12">
-            <h2 className='font-gilroy font-medium text-5xl leading-[57px]  max-w-[460px]'>Add <span className='font-gilroy text-blue'>Label</span> of an Image</h2>
+        <div className="row items-center lg:items-end">
+          <div className="w-full md:w-1/2 lg:w-5/12 md:pr-4 max-md:flex max-md:justify-center">
+            <div className='max-w-[600px]'>
+              <h2 className="font-gilroy font-medium text-5xl leading-[57px] max-w-[460px]">
+                Add <span className="font-gilroy text-blue">Label</span> of an Image
+              </h2>
+              <p className="text-base font-normal leading-6 text-gray pt-4 pb-6">
+                Efficient and Accurate Labeling on Image.
+              </p>
+              <div className="p-5 border-[0.5px] border-blue border-solid rounded-2xl">
+                <p className="font-semibold text-base leading-6">
+                  Upload Image and add label
+                </p>
+                <div>
+                  <ImagePicker />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="w-7/12"></div>
+          <div className="w-full md:w-1/2 lg:w-7/12 flex justify-center md:justify-end md:pl-4">
+            <div className='w-full sm:min-h-[495px] relative mb-4'>
+              <img className='pointer-events-none shadow-overviewShadow rounded-2xl lg:max-w-[399px] w-full mt-8' src={overviewImg1} alt="overviewImg1" />
+              <img className='absolute right-0 top-0 pointer-events-none lg:max-w-[191px] w-full rounded-2xl shadow-overviewShadow lg:h-[241px] max-lg:hidden' src={overviewImg2} alt="overviewImg2" />
+              <img className='pointer-events-none lg:absolute bottom-0 w-full shadow-overviewShadow right-0 rounded-2xl lg:max-w-[353px] max-lg:mt-4 max-lg:shadow-overviewShadow' src={overviewImg3} alt="overviewImg3" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Label
+export default Label;
