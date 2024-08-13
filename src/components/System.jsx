@@ -27,11 +27,11 @@ const System = () => {
             <div className='relative right-0 top-0 shadow-whiteBox py-7 px-6 bg-white z-30 rounded-2xl max-w-[381px] w-full sm:translate-x-[140px] sm:-translate-y-[90px] max-sm:mt-4'>
               <img src={projectReq} alt="project req" className='pointer-events-none' />
             </div>
-            <div className='max-sm:mt-5'> <CommonButton text={'Get Started Now'} /></div>
+            <div className='max-sm:mt-5 max-lg:-mt-16'> <CommonButton text={'Get Started Now'} /></div>
           </div>
 
           <div className='lg:w-1/2 px-3 max-lg:mt-5'>
-             <WorkflowSteps />
+            <WorkflowSteps />
           </div>
         </div>
       </div>
