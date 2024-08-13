@@ -17,14 +17,14 @@ const Footer = () => {
                         <ul className='lg:pr-3'>
                             {FOOTER_ITEM_FIRST.map((item, index) =>
                                 <li key={index}>
-                                    <a href={item.href} className=' font-normal text-lg text-white leading-7'>
+                                    <a href={item.href} className='font-normal text-lg text-white leading-7'>
                                         {item.text}
                                     </a>
                                 </li>
                             )}
                             {FOOTER_ITEMS.map((item, index) =>
                                 <li key={index} className=' pt-5'>
-                                    <a href={item.href} className=' font-normal text-base hover:opacity-100 custom_Duration text-white leading-6 opacity-70'>
+                                    <a href={item.href} className='font-normal text-base hover:opacity-100 custom_Duration text-white leading-6 opacity-70'>
                                         {item.text}
                                     </a>
                                 </li>
@@ -35,14 +35,14 @@ const Footer = () => {
                         <ul>
                             {FOOTER_LINKS.map((item, index) =>
                                 <li key={index}>
-                                    <a href={item.href} className=' font-normal text-lg text-white leading-7'>
+                                    <a href={item.href} className='font-normal text-lg text-white leading-7'>
                                         {item.text}
                                     </a>
                                 </li>
                             )}
                             {FOOTER_TEAM.map((item, index) =>
                                 <li key={index} className=' pt-5'>
-                                    <a href={item.href} className=' hover:opacity-100 custom_Duration font-normal text-base text-white leading-6 opacity-70'>
+                                    <a href={item.href} className='hover:opacity-100 custom_Duration font-normal text-base text-white leading-6 opacity-70'>
                                         {item.text}
                                     </a>
                                 </li>
@@ -53,14 +53,14 @@ const Footer = () => {
                         <ul className='lg:pl-2'>
                             {FOOTER_POLICY.map((item, index) =>
                                 <li key={index}>
-                                    <a href={item.href} className=' text-nowrap font-normal text-lg text-white leading-7'>
+                                    <a href={item.href} className='text-nowrap font-normal text-lg text-white leading-7'>
                                         {item.text}
                                     </a>
                                 </li>
                             )}
                             {FOOTER_CONTACT.map((item, index) =>
                                 <li key={index} className=' pt-5'>
-                                    <a href={item.href} className=' hover:opacity-100 custom_Duration text-nowrap font-normal text-base text-white leading-6 opacity-70'>
+                                    <a href={item.href} className='hover:opacity-100 custom_Duration text-nowrap font-normal text-base text-white leading-6 opacity-70'>
                                         {item.text}
                                     </a>
                                 </li>
@@ -72,7 +72,7 @@ const Footer = () => {
                             <ul>
                                 {FOOTER_FOLLOW.map((item, index) =>
                                     <li key={index}>
-                                        <a href={item.href} className=' font-normal text-lg text-white leading-7'>
+                                        <a href={item.href} className='font-normal text-lg text-white leading-7'>
                                             {item.text}
                                         </a>
                                     </li>
@@ -81,7 +81,7 @@ const Footer = () => {
                             <div className=' pt-5 gap-3 max-sm:gap-5 max-sm:flex-col flex'>
                                 <div className=' flex gap-3 max-sm:gap-5'>
                                     <a href="https://www.facebook.com/" target='blank_'>
-                                        <div className=' size-[32px] rounded-[50px] border-[1px] border-textBlue hover:border-white custom_Duration hover_Effect bg-white flex justify-center items-center'>
+                                        <div className='size-[32px] rounded-[50px] border-[1px] border-textBlue hover:border-white custom_Duration hover_Effect bg-white flex justify-center items-center'>
                                             <FACEBOOK />
                                         </div>
                                     </a>
@@ -91,7 +91,7 @@ const Footer = () => {
                                         </div>
                                     </a>
                                 </div>
-                                <div className=' flex gap-3 max-sm:gap-5'>
+                                <div className='flex gap-3 max-sm:gap-5'>
                                     <a href="https://www.linkedin.com/login" target='blank_'>
                                         <div className='size-[32px] hover:border-white custom_Duration hover_Effect rounded-[50px] border-[1px] border-textBlue bg-white flex justify-center items-center'>
                                             <IN_LINK />
@@ -115,5 +115,4 @@ const Footer = () => {
         </div>
     )
 }
-
 export default Footer

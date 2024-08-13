@@ -2,7 +2,6 @@ import manImg from '../assets/images/webp/out-team-man-img.webp'
 import womenImg from '../assets/images/webp/out-team-women-img.webp'
 import ellipsImg from '../assets/images/webp/out-team-ellips.png'
 import { FacebookLogo, InstgramLogo, LinkedinLogo, MailIcon, PhnCallImg } from '../common/Icon'
-
 const Team = () => {
   return (
     <div className='bg-ourTeam bg-no-repeat bg-center md:bg-full bg-cover lg:py-[183px] py-40 relative'>
@@ -51,7 +50,7 @@ const Team = () => {
             </div>
           </div>
           <div className='lg:w-1/2 px-3 max-lg:mt-3'>
-            <div className='max-w-[560px]  rounded-2xl relative'>
+            <div className='max-w-[560px] rounded-2xl relative'>
               <div className='shadow-mediaIcon absolute top-0 right-0 border-t-[0.5px] border-r-[0.5px] border-[#084CAF52] max-w-12 py-4 px-2'>
                 <a href='https://www.linkedin.com/login' target='_blank' className='size-8 bg-blue flex items-center justify-center rounded-full'>
                   <LinkedinLogo />

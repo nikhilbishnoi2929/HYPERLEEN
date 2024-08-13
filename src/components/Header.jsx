@@ -2,7 +2,6 @@ import React from 'react'
 import pageLogo from '../assets/images/svg/logo.svg'
 import heroSectionBg from '../assets/images/webp/hero-bg.png'
 import dottedArrow from '../assets/images/webp/dotted-arrow.png'
-
 const Header = () => {
   const heroBg = {
     backgroundImage: `url(${heroSectionBg})`,
@@ -66,5 +65,4 @@ const Header = () => {
     </div>
   )
 }
-
 export default Header
