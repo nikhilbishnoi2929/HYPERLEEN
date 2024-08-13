@@ -10,13 +10,12 @@ import Segmentation from "./components/Segmentation";
 import System from "./components/System";
 import Team from "./components/Team";
 import BottomTop from "./components/BottomTop";
-
 function App() {
   return (
-    <div className=" overflow-hidden">
+    <div className=" overflow-hidden" >
       <Header />
       <Label />
-      {/* <Segmentation /> */}
+      <Segmentation />
       <Team />
       <System />
       <Quality />
@@ -28,5 +27,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

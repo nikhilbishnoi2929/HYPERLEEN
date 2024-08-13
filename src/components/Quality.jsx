@@ -33,7 +33,7 @@ const Quality = () => {
         <div className='w-full max-w-[449px] h-full max-h-[404px] xl:mt-[52px] rounded-[16px] bg-[#FFFFFF0A] border-[0.5px] border-blue p-[20px] max-sm:p-[10px]'>
           <div className='flex justify-between'>
             <div className='flex flex-col'>
-              <h4 className='font_gilroy_semibold font-semibold text-2xl leading-9 text-black max-sm:leading-7 max-sm:text-xl'>Step 01</h4>
+              <h4 className='font_gilroy_semibold font-semibold text-2xl leading-9 text-black max-sm:leading-7 max-sm:text-xl'>Step 02</h4>
               <h5 className='font_gilroy_semibold pt-2 font-semibold text-xl leading-7 text-gray '>Verification</h5>
             </div>
             <div className='flex gap-[13px]'>
@@ -61,7 +61,7 @@ const Quality = () => {
           </div>
         </div>
         <div className='xl:max-w-[326px] max-xl:max-w-[449px] w-full rounded-[16px] h-full max-h-[384px] xl:mt-[147px] bg-[#FFFFFF0A] border-[0.5px] border-blue p-[20px] max-sm:p-[10px]'>
-          <h4 className='font_gilroy_semibold max-sm:text-xl font-semibold text-2xl leading-9 text-black max-sm:leading-7'>Step 01</h4>
+          <h4 className='font_gilroy_semibold max-sm:text-xl font-semibold text-2xl leading-9 text-black max-sm:leading-7'>Step 03</h4>
           <h5 className='font_gilroy_semibold pt-2 font-semibold text-xl leading-7 text-gray '>Data Labeling</h5>
           <p className='font-poppins font-normal text-base leading-6 text-gray xl:max-w-[281px] pt-[10px]'>Incorrectly labeled data is reviewed and relabeled correctly</p>
           <div className='flex sm:flex-col flex-row max-sm:justify-between max-sm:pt-4'>
