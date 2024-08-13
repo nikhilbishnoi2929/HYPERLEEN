@@ -52,7 +52,7 @@ const Exclusive = () => {
                                 <input
                                     type="email"
                                     placeholder="Your e-mail"
-                                    className="outline-none w-full bg-transparent"
+                                    className="outline-none w-full text-gray bg-transparent"
                                     value={email}
                                     onChange={handleChange}
                                     required

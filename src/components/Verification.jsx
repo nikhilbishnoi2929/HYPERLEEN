@@ -24,7 +24,7 @@ const Verification = () => {
                     </div>
                     <div className='lg:w-1/2 px-3  max-lg:mt-36'>
                         <h1 className='font-gilroy text-11xl leading-[43px] font-semibold text-black max-lg:text-center'>Verification</h1>
-                        <p className='text-black font-poppins max-w-[540px] max-lg:text-center pt-4'>Verification is a crucial step to ensure the accuracy of the labeled data. It involves reviewing the segmented image to confirm if the segmentation was performed correctly.</p>
+                        <p className='text-gray font-poppins max-w-[540px] max-lg:text-center pt-4'>Verification is a crucial step to ensure the accuracy of the labeled data. It involves reviewing the segmented image to confirm if the segmentation was performed correctly.</p>
                         <div className='lg:mt-12 md:mt-8 mt-5 max-lg:flex justify-center'>
                             <CommonButton
                                 text={"Learn more"}

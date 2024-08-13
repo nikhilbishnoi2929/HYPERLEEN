@@ -92,7 +92,7 @@ const Footer = () => {
                                     </a>
                                 </div>
                                 <div className=' flex gap-3 max-sm:gap-5'>
-                                    <a href="https://www.facebook.com/" target='blank_'>
+                                    <a href="https://www.linkedin.com/login" target='blank_'>
                                         <div className='size-[32px] hover:border-white custom_Duration hover_Effect rounded-[50px] border-[1px] border-textBlue bg-white flex justify-center items-center'>
                                             <IN_LINK />
                                         </div>
