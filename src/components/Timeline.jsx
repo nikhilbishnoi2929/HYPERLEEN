@@ -1,13 +1,9 @@
 import React from 'react';
-import { Steps } from '../common/CommonHelper';
-
-
+import { STEPS } from '../common/Helper';
 const WorkflowSteps = () => {
-
-
   return (
     <div className="relative flex flex-col space-y-8 lg:p-6 sm:p-4 p-2 bg-white rounded-lg max-w-md mx-auto">
-      {Steps.map((val, index) => (
+      {STEPS.map((val, index) => (
         <div key={index} className="relative flex items-start">
           <div className="flex items-center justify-center max-w-12 min-h-12 w-full h-full rounded-full bg-[#E6EDF7]">
             {val.icon}
@@ -24,5 +20,4 @@ const WorkflowSteps = () => {
     </div>
   );
 };
-
 export default WorkflowSteps;

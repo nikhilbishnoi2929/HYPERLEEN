@@ -38,7 +38,7 @@ export const FAQS = [
     },
 ];
 
-export const Steps = [
+export const STEPS = [
     {
         icon: <Timeline01 />,
         title: 'Project request',
