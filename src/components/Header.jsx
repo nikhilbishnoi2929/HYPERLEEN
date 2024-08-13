@@ -2,7 +2,6 @@ import React from 'react'
 import pageLogo from '../assets/images/svg/logo.svg'
 import heroSectionBg from '../assets/images/webp/hero-bg.png'
 import dottedArrow from '../assets/images/webp/dotted-arrow.png'
-import { Link } from 'react-router-dom'
 
 const Header = () => {
   const heroBg = {
@@ -21,19 +20,19 @@ const Header = () => {
               <ul className='flex items-center gap-7'>
                 <li className='font-normal text-base leading-6 text-gray'>Home</li>
                 <li className='font-normal text-base leading-6 text-gray'>
-                  <Link to="/label">Label</Link>
+                  Label
                 </li>
                 <li className='font-normal text-base leading-6 text-gray'>
-                  <Link to="/about-us"> About Us</Link>
+                  About Us
                 </li>
                 <li className='font-normal text-base leading-6 text-gray'>
-                  <Link to="/how-it-work">How It Works</Link>
+                  How It Works
                 </li>
                 <li className='font-normal text-base leading-6 text-gray'>
-                  <Link to="/team">Team</Link>
+                  Team
                 </li>
                 <li className='font-normal text-base leading-6 text-gray'>
-                  <Link to="/faq">FAQs</Link>
+                  FAQs
                 </li>
               </ul>
               <div className='flex items-center gap-3'>
@@ -79,5 +78,4 @@ const Header = () => {
     </div>
   )
 }
-
 export default Header

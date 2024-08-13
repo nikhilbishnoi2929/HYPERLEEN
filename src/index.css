@@ -18,3 +18,8 @@
 .hover_Effect:hover{
 transform: scale(1.1);
 }
+ @media (max-width: 575px) {
+  .routate_one{
+    transform: rotate(270deg);
+  }
+ }

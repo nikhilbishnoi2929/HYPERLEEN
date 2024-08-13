@@ -1,6 +1,5 @@
 import verificationImg from '../assets/images/webp/verification-img.webp'
 import CommonButton from '../common/Button'
-
 const Verification = () => {
     return (
         <>
@@ -8,7 +7,7 @@ const Verification = () => {
                 <div className='row items-center justify-between max-lg:max-w-[600px] max-lg:justify-center max-lg:flex-col max-lg:mx-auto'>
                     <div className='lg:w-1/2 px-3 relative'>
                         <div className='absolute top-0 w-full max-w-[502px]'>
-                            <h3 className='sm:py-8  px-7 py-5 text-white md:text-11xl sm:text-3xl xsm:text-2xl text-xl sm:eading-[43px]'>Is Previous Selected Object is Correct?</h3>
+                            <h3 className='sm:py-8 px-7 py-5 text-white md:text-11xl sm:text-3xl xsm:text-2xl text-xl sm:leading-[43px]'>Is Previous Selected Object is Correct?</h3>
                         </div>
                         <div className='max-w-[502px]'>
                             <img src={verificationImg} alt="verifiction can or burger img" width={502} height={483} />
@@ -22,9 +21,9 @@ const Verification = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='lg:w-1/2 px-3  max-lg:mt-36'>
+                    <div className='lg:w-1/2 px-3 max-lg:mt-36'>
                         <h1 className='font-gilroy text-11xl leading-[43px] font-semibold text-black max-lg:text-center'>Verification</h1>
-                        <p className='text-black font-poppins max-w-[540px] max-lg:text-center pt-4'>Verification is a crucial step to ensure the accuracy of the labeled data. It involves reviewing the segmented image to confirm if the segmentation was performed correctly.</p>
+                        <p className='text-gray font-poppins max-w-[540px] max-lg:text-center pt-4'>Verification is a crucial step to ensure the accuracy of the labeled data. It involves reviewing the segmented image to confirm if the segmentation was performed correctly.</p>
                         <div className='lg:mt-12 md:mt-8 mt-5 max-lg:flex justify-center'>
                             <CommonButton
                                 text={"Learn more"}
@@ -37,5 +36,4 @@ const Verification = () => {
         </>
     )
 }
-
 export default Verification;

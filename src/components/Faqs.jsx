@@ -1,14 +1,11 @@
 import React, { useState, useRef } from 'react';
 import { FAQS } from '../common/CommonHelper';
-
 const Faqs = () => {
     const [activeIndex, setActiveIndex] = useState(null);
     const contentRefs = useRef([]);
-
     const toggleAccordion = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
     };
-
     return (
         <div className='max-w-[997px] container px-3 mx-auto'>
             <div className='flex justify-center pt-[160px] max-lg:pt-[100px] max-xl:pt-[120px] max-md:pt-[80px] max-sm:pt-16'>
@@ -58,5 +55,4 @@ const Faqs = () => {
         </div>
     );
 }
-
 export default Faqs;

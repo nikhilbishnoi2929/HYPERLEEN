@@ -28,9 +28,9 @@ const BottomTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className=''
+          className='z-50'
         >
-          <img className='size-16 hover:animate-bounce' src={arrowTop} />
+          <img className='size-16 z-50 relative hover:animate-bounce' src={arrowTop} />
         </button>
       )}
     </div>

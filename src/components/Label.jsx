@@ -27,7 +27,7 @@ const Label = () => {
             </div>
           </div>
           <div className="w-full md:w-1/2 lg:w-7/12 flex justify-center md:justify-end md:pl-4">
-            <div className='w-full sm:min-h-[495px] relative mb-4'>
+            <div className='w-full lg:min-h-[495px] lg:max-w-[598px] relative mb-4'>
               <img className='pointer-events-none shadow-overviewShadow rounded-2xl lg:max-w-[399px] w-full mt-8' src={overviewImg1} alt="overviewImg1" />
               <img className='absolute right-0 top-0 pointer-events-none lg:max-w-[191px] w-full rounded-2xl shadow-overviewShadow lg:h-[241px] max-lg:hidden' src={overviewImg2} alt="overviewImg2" />
               <img className='pointer-events-none lg:absolute bottom-0 w-full shadow-overviewShadow right-0 rounded-2xl lg:max-w-[353px] max-lg:mt-4 max-lg:shadow-overviewShadow' src={overviewImg3} alt="overviewImg3" />
