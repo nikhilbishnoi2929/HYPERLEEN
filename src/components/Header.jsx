@@ -2,6 +2,7 @@ import React from 'react'
 import pageLogo from '../assets/images/svg/logo.svg'
 import heroSectionBg from '../assets/images/webp/hero-bg.png'
 import dottedArrow from '../assets/images/webp/dotted-arrow.png'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const heroBg = {
@@ -9,30 +10,43 @@ const Header = () => {
   }
   return (
     <div>
-      <div className='container'>
-        <div className='flex justify-between items-center py-4'>
-          <div>
-            <img src={pageLogo} alt="pageLogo" />
-          </div>
-          <div className='flex gap-8 items-center'>
-            <ul className='flex items-center gap-7'>
-              <li className='font-normal text-base leading-6 text-gray'>Home</li>
-              <li className='font-normal text-base leading-6 text-gray'>Label</li>
-              <li className='font-normal text-base leading-6 text-gray'>About Us</li>
-              <li className='font-normal text-base leading-6 text-gray'>How It Works</li>
-              <li className='font-normal text-base leading-6 text-gray'>Team</li>
-              <li className='font-normal text-base leading-6 text-gray'>FAQs</li>
-            </ul>
-            <div className='flex items-center gap-3'>
-              <button className='font-normal text-base leading-7 text-black w-[116px] h-[55px] rounded-[100px] border-black border-[1px] border-solid'>Sign Up</button>
-              <button className='font-normal text-lg leading-7 text-white w-[148px] h-[55px] bg-blue rounded-[100px] shadow-buttonShadow'>Contact Us</button>
+      <div className='py-4 border-b-[0.1px] border-solid border-gray'>
+        <div className='container'>
+          <div className='flex justify-between items-center'>
+            <div>
+              <img src={pageLogo} alt="pageLogo" />
+            </div>
+
+            <div className='flex gap-8 items-center'>
+              <ul className='flex items-center gap-7'>
+                <li className='font-normal text-base leading-6 text-gray'>
+                  <Link to="/home"> Home </Link></li>
+                <li className='font-normal text-base leading-6 text-gray'>
+                  <Link to="/label">Label</Link>
+                </li>
+                <li className='font-normal text-base leading-6 text-gray'>
+                  <Link to="/about-us"> About Us</Link>
+                </li>
+                <li className='font-normal text-base leading-6 text-gray'>
+                  <Link to="/how-it-work">How It Works</Link>
+                </li>
+                <li className='font-normal text-base leading-6 text-gray'>
+                  <Link to="/team">Team</Link>
+                </li>
+                <li className='font-normal text-base leading-6 text-gray'>
+                  <Link to="/faq">FAQs</Link>
+                </li>
+              </ul>
+              <div className='flex items-center gap-3'>
+                <button className='font-normal text-base leading-7 text-black w-[116px] h-[55px] rounded-[100px] border-black border-[1px] border-solid'>Sign Up</button>
+                <button className='font-normal text-lg leading-7 text-white w-[148px] h-[55px] bg-blue rounded-[100px] shadow-buttonShadow'>Contact Us</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
       <div className='bg-center bg-100% bg-no-repeat mx-auto' style={heroBg}>
-        <div className="container">
+        <div className="container py-[71px]">
           <div className='flex items-center justify-center gap-4'>
             <div className='w-[43px]'>
               <img src={dottedArrow} className='w-full' alt="dottedArrow" />
