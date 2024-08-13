@@ -10,12 +10,14 @@ import Segmentation from "./components/Segmentation";
 import System from "./components/System";
 import Team from "./components/Team";
 import BottomTop from "./components/BottomTop";
+import Verification from "./components/Verification";
 function App() {
   return (
     <div className=" overflow-hidden" >
       <Header />
       <Label />
       <Segmentation />
+      <Verification/>
       <Team />
       <System />
       <Quality />
