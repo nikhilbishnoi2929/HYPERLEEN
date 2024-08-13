@@ -1,6 +1,6 @@
 import React from 'react';
 import { STEPS } from '../common/Helper';
-const WorkflowSteps = () => {
+const Timeline = () => {
   return (
     <div className="relative flex flex-col space-y-8 lg:p-6 sm:p-4 p-2 bg-white rounded-lg max-w-md mx-auto">
       {STEPS.map((val, index) => (
@@ -20,4 +20,4 @@ const WorkflowSteps = () => {
     </div>
   );
 };
-export default WorkflowSteps;
+export default Timeline;

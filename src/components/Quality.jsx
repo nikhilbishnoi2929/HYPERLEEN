@@ -21,7 +21,7 @@ const Quality = () => {
           <p className='font-poppins font-normal text-base leading-6 text-gray max-sm:text-sm max-w-[674px] pt-4 '>Our rigorous quality assurance process ensures that our data labeling services provide accurate and reliable results. Here’s a breakdown of our process:</p>
         </div>
       </div>
-      <div className='flex gap-5 lg:pt-20 pt-5 max-xl:flex-wrap justify-center xl:justify-start relative'>
+      <div className='flex gap-5 lg:pt-24 pt-5 max-xl:flex-wrap justify-center xl:justify-start relative'>
         <div className='xl:max-w-[326px] max-xl:max-w-[449px] w-full h-full max-h-[384px] rounded-[16px] bg-[#FFFFFF0A] border-[0.5px] border-blue p-[20px] max-sm:p-[10px]'>
           <h4 className='font_gilroy_semibold font-semibold text-2xl leading-9 max-sm:leading-7 text-black max-sm:text-xl'>Step 01</h4>
           <h5 className='font_gilroy_semibold pt-2 font-semibold text-xl leading-7 text-gray '>Data Labeling</h5>
@@ -71,8 +71,8 @@ const Quality = () => {
           </div>
         </div>
 
-        <img src={arrowDot} className='top-[6px] max-xl:hidden z-0 left-[323px] absolute' alt="arrowDot" />
-        <img src={arrowDotTwo} className='top-[62px] max-xl:hidden z-0 right-[64px] absolute' alt="arrowDot" />
+        <img src={arrowDot} className='top-[22px] max-xl:hidden z-0 left-[323px] absolute' alt="arrowDot" />
+        <img src={arrowDotTwo} className='top-[76px] max-xl:hidden z-0 right-[64px] absolute' alt="arrowDot" />
       </div>
 
     </div>
