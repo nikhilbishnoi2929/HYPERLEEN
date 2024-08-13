@@ -1,6 +1,6 @@
 import React from 'react';
 import logoPage from '../assets/images/webp/logoPage.webp';
-import { FOOTER_CONTACT, FOOTER_FOLLOW, FOOTER_ITEM_FIRST, FOOTER_ITEMS, FOOTER_LINKS, FOOTER_POLICY, FOOTER_TEAM } from '../common/Commonhelper';
+import { FOOTER_CONTACT, FOOTER_FOLLOW, FOOTER_ITEM_FIRST, FOOTER_ITEMS, FOOTER_LINKS, FOOTER_POLICY, FOOTER_TEAM } from '../common/CommonHelper';
 import { FACEBOOK, IN_LINK, INSTAGRAM, TWITTER } from '../common/Icon';
 const Footer = () => {
     return (
