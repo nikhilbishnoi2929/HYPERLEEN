@@ -21,5 +21,4 @@ const WorkflowSteps = () => {
     </div>
   );
 };
-
-export default WorkflowSteps;
+export default Timeline;
