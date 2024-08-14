@@ -13,7 +13,7 @@ const Team = () => {
         <p className='text-white text-center max-w-[411px] mx-auto opacity-70 pt-4'>
           Meet our dedicated team of experts ensuring precision and quality in every data labeling task.
         </p>
-        <div className='row mt-14 justify-center'>
+        <div className='row mt-[58px] justify-center'>
           <div className='lg:w-1/2 px-3'>
             <div className='max-w-[560px] rounded-2xl relative'>
               <div className='shadow-mediaIcon absolute top-0 right-0 border-t-[0.5px] border-r-[0.5px] border-[#084CAF52] max-w-12 py-4 px-2'>
@@ -28,7 +28,7 @@ const Team = () => {
                 </a>
               </div>
               <img src={manImg} alt="team man img" width={560} height={393} />
-              <div className='bg-white pt-8 px-4 pb-4 rounded-br-2xl rounded-es-2xl'>
+              <div className='bg-white pt-6 px-4 pb-4 rounded-br-2xl rounded-es-2xl'>
                 <div className='flex items-center justify-between max-sm:flex-wrap'>
                   <div className='flex flex-col items-start'>
                     <h1 className='font-gilroy font-semibold text-2xl text-black capitalize'>Mark Butler</h1>
@@ -63,7 +63,7 @@ const Team = () => {
                 </a>
               </div>
               <img src={womenImg} alt="team man img" width={560} height={393} />
-              <div className='bg-white pt-8 px-4 pb-4 rounded-br-2xl rounded-es-2xl'>
+              <div className='bg-white pt-6 px-4 pb-4 rounded-br-2xl rounded-es-2xl'>
                 <div className='flex items-center justify-between max-sm:flex-wrap'>
                   <div className='flex flex-col items-start'>
                     <h1 className='font-gilroy font-semibold text-2xl text-black capitalize'>Corinne Crabtree </h1>
