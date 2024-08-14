@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import pageLogo from '../assets/images/svg/logo.svg'
-import heroSectionBg from '../assets/images/webp/hero-bg.webp'
 import dottedArrow from '../assets/images/webp/dotted-arrow.webp'
-import CommonButton from '../common/Button'
 import headerEllipse from '../assets/images/webp/header-ellipse.webp'
+import heroSectionBg from '../assets/images/webp/hero-bg.webp'
+import CommonButton from '../common/Button'
 
 const Header = () => {
   const heroBg = {
@@ -39,17 +39,14 @@ const Header = () => {
                 <li>
                   <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#faq">FAQs</a>
                 </li>
-
                 <CommonButton className='!text-black bg-transparent !border-black !border-[1px] !border-solid hover:!bg-blue hover:!text-white hover:!border-transparent shadow-none md:hidden' text={"Sign Up"} />
-                <CommonButton text={"Contact Us"} className={'md:hidden'}/>
+                <CommonButton text={"Contact Us"} className={'md:hidden'} />
               </ul>
-
               <div className='w-8 h-7 flex flex-col justify-between lg:hidden z-[500]' onClick={() => setNav(!nav)}>
                 <span className={`w-full h-1 bg-black rounded-sm`}></span>
                 <span className={`w-full h-1 bg-black rounded-sm`}></span>
                 <span className={`w-full h-1 bg-black rounded-sm`}></span>
               </div>
-
               <div className='flex items-center gap-3'>
                 <CommonButton className='!text-black bg-transparent !border-black !border-[1px] !border-solid hover:!bg-blue hover:!text-white hover:!border-transparent shadow-none max-md:hidden' text={"Sign Up"} />
                 <CommonButton text={"Contact Us"} className={"max-md:hidden"} />
@@ -72,16 +69,11 @@ const Header = () => {
           <div className='pt-6 max-w-[834px] mx-auto'>
             <div className='flex items-center gap-4 sm:gap-6 justify-center flex-wrap'>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Accurate</div>
-
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Scalable</div>
-
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Secure Data</div>
-
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Labeling Solutions</div>
-
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Quality Work</div>
             </div>
-
             <h1 className='font-gilroy sm:text-5xl text-4xl md:text-6xl lg:text-12xl font-medium md:leading-[80px] text-center pt-8 sm:pt-11'>Transform Your <span className='text-blue font-gilroy'>Data into AI</span> Insights</h1>
             <p className='text-base leading-6 text-gray mx-auto max-w-[634px] pt-5 text-center'>Unlock the full potential of your AI models with our premium data labeling services. Our expert annotators ensure your data is meticulously labeled, enabling superior performance and insights.</p>
             <div className='flex items-center gap-3 pt-7 sm:pt-10 justify-center'>
@@ -91,7 +83,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-
       <img src={headerEllipse} className='absolute right-0 top-0 pointer-events-none max-lg:hidden' alt="headerEllipse" />
     </div>
   )
