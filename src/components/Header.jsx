@@ -61,7 +61,7 @@ const Header = () => {
             <div className='w-[43px]'>
               <img src={dottedArrow} className='w-full' alt="dottedArrow" />
             </div>
-            <div className='text-base font-normal leading-6 text-blue'>AI Solutions</div>
+            <div className='text-base font-normal font_gilroy_regular leading-6 text-blue'>AI Solutions</div>
             <div className='w-[43px] rotate-180'>
               <img src={dottedArrow} className='w-full' alt="dottedArrow" />
             </div>
@@ -74,10 +74,10 @@ const Header = () => {
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Labeling Solutions</div>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Quality Work</div>
             </div>
-            <h1 className='font-gilroy sm:text-5xl text-4xl md:text-6xl lg:text-12xl font-medium md:leading-[80px] text-center pt-8 sm:pt-11'>Transform Your <span className='text-blue font-gilroy'>Data into AI</span> Insights</h1>
+            <h1 className='sm:text-5xl text-4xl md:text-6xl lg:text-12xl font-medium font_gilroy_medium md:leading-[80px] text-center pt-8 sm:pt-11'>Transform Your <span className='text-blue font-gilroy'>Data into AI</span> Insights</h1>
             <p className='text-base leading-6 text-gray mx-auto max-w-[634px] pt-5 text-center'>Unlock the full potential of your AI models with our premium data labeling services. Our expert annotators ensure your data is meticulously labeled, enabling superior performance and insights.</p>
             <div className='flex items-center gap-3 pt-7 sm:pt-10 justify-center'>
-              <CommonButton className='font-normal text-lg leading-7 text-white w-[151px] h-[55px] bg-blue rounded-[100px] shadow-buttonShadow ' text={'Get Started'} />
+              <CommonButton className='font-normal font_gilroy_regular text-lg leading-7 text-white w-[151px] h-[55px] bg-blue rounded-[100px] shadow-buttonShadow ' text={'Get Started'} />
               <CommonButton className='shadow-none bg-transparent !text-black w-[150px] h-[55px] rounded-[100px] !border-black !border-[1px] !border-solid hover:!bg-blue hover:!text-white hover:!border-transparent' text={'Try For Free'} />
             </div>
           </div>

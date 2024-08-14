@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Swal from 'sweetalert';
+import Swal from 'sweetalert2';
 
 const Exclusive = () => {
     const [email, setEmail] = useState('');

@@ -10,8 +10,8 @@ const Label = () => {
         <div className="row mx-auto items-center lg:items-end">
           <div className="w-full md:w-1/2 lg:w-5/12 md:pr-4 max-md:flex max-md:justify-center">
             <div className='max-w-[600px] max-md:max-w-[541px] max-md:w-full'>
-              <h2 className="font-gilroy font-medium text-4xl sm:text-5xl md:leading-[57px] max-w-[460px] max-md:text-center max-md:mx-auto">
-                Add <span className="font-gilroy text-blue">Label</span> of an Image
+              <h2 className="font-gilroy font_gilroy_medium text-4xl sm:text-5xl md:leading-[57px] max-w-[460px] max-md:text-center max-md:mx-auto">
+                Add <span className="text-blue">Label</span> of an Image
               </h2>
               <p className="text-base font-normal leading-6 text-gray pt-4 pb-4 sm:pb-6 max-md:text-center">
                 Efficient and Accurate Labeling on Image.
