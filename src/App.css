@@ -65,3 +65,22 @@
 .font_gilroy_semibold {
   font-family: "Gilroy semibold, sans-serif";
 }
+
+.common_padding {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 991.99px) {
+  .common_padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .common_padding {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

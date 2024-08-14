@@ -16,7 +16,7 @@ function App() {
     <div className=" overflow-hidden">
       <Header />
       <Label />
-      {/* <Segmentation /> */}
+      <Segmentation />
       <Team />
       <System />
       <Quality />

@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
-import imagePicker from '../assets/images/webp/image-picker.png';
+import imagePicker from '../assets/images/webp/image-picker.webp';
+import CommonButton from "../common/Button";
 
 const ImagePicker = () => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [showPopup, setShowPopup] = useState(false);
+    const [fileName, setFileName] = useState(''); // New state for storing the file name
 
     useEffect(() => {
         let timer;
@@ -29,6 +31,7 @@ const ImagePicker = () => {
             reader.onload = (event) => {
                 setData(event.target.result);
                 setLoading(false);
+                setFileName(files[0].name); // Set the file name to the input field
             };
 
             reader.readAsDataURL(files[0]);
@@ -39,6 +42,7 @@ const ImagePicker = () => {
         setData(null);
         setError(null);
         setShowPopup(false);
+        setFileName(''); // Clear the file name from the input field
     };
 
     const handleFileInputClick = () => {
@@ -66,12 +70,10 @@ const ImagePicker = () => {
                 className="hidden"
             />
 
-            <div
-                className="relative w-full h-[200px] bg-[#F2F2F2] rounded-xl overflow-hidden p-5"
-            >
+            <div className="relative w-full h-[200px] bg-[#F2F2F2] rounded-xl overflow-hidden p-4 sm:p-5">
                 {!data && !loading && (
                     <div className="flex items-center justify-center w-full h-full overflow-hidden rounded-xl">
-                        <img src={imagePicker} className="cursor-pointer" onClick={handleFileInputClick} alt="imagePicker" />
+                        <img src={imagePicker} className="cursor-pointer w-full h-full" onClick={handleFileInputClick} alt="imagePicker" />
                     </div>
                 )}
 
@@ -124,21 +126,22 @@ const ImagePicker = () => {
                 <input
                     type="text"
                     placeholder="Car."
-                    className="h-[81px] w-full px-4 py-3 border-solid border-[0.5px] outline-none border-[#4E4E4E] mt-5 mb-9 rounded-[12px]"
+                    value={fileName} // Bind the input field value to the file name
+                    className="h-12 sm:h-[81px] w-full px-4 py-3 border-solid border-[0.5px] outline-none border-[#4E4E4E] mt-5 mb-5 sm:mb-9 rounded-[12px]"
+                    readOnly // Make the input field read-only
                 />
 
                 <div className="flex space-x-3">
-                    <button
+                    <CommonButton
                         type="button"
                         onClick={handleOkClick}
-                        className="w-[203px] h-[55px] px-6 py-3 bg-[#084CAF] text-white rounded-[100px] opacity-100 shadow-[4px_4px_20px_rgba(8,76,175,0.3)]"
-                    >
-                        OK
-                    </button>
+                        className="!max-w-[203px] !w-full h-[55px] px-6 py-3 bg-[#084CAF] text-white rounded-[100px] opacity-100 shadow-[4px_4px_20px_rgba(8,76,175,0.3)]"
+                        text={"OK"}
+                    />
                     <button
                         type="button"
                         onClick={handleClearClick}
-                        className="w-[203px] h-[55px] px-6 py-3 text-black border-[1px] border-solid border-black rounded-[100px]"
+                        className="w-[203px] h-[55px] px-6 py-3 text-black border-[1px] border-solid border-black rounded-[100px] hover:bg-blue hover:text-white hover:border-transparent duration-300 ease-linear"
                     >
                         Cancel
                     </button>

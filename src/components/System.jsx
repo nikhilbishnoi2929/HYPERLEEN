@@ -6,7 +6,7 @@ import WorkflowSteps from './Timeline'
 
 const System = () => {
   return (
-    <div className='lg:pt-[100px] md:pt-16 pt-0'>
+    <div className='lg:pt-[100px] md:pt-16 pt-0' id='how-it'>
       <div className='container'>
         <div className='row items-end justify-center'>
           <div className='lg:w-1/2 px-3'>
