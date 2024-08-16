@@ -64,18 +64,7 @@ export const STEPS = [
             'Get the appropriate data annotated.',
     },
 ];
-export const FOOTER_ITEM_FIRST = [
-    {
-        href: "#Quick Links",
-        text: "Quick Links",
-    }
-]
-export const FOOTER_POLICY = [
-    {
-        href: "#Policy",
-        text: "Policy",
-    }
-]
+ 
 export const FOOTER_ITEMS = [
     {
         href: "#home",
@@ -113,12 +102,6 @@ export const FOOTER_CONTACT = [
         text: "Terms and conditions",
     },
 ];
-export const FOOTER_LINKS = [
-    {
-        href: "#Links",
-        text: "Links",
-    }
-]
 export const FOOTER_TEAM = [
     {
         href: "#Team",
@@ -129,10 +112,4 @@ export const FOOTER_TEAM = [
         text: "Label",
     },
 ];
-export const FOOTER_FOLLOW = [
-    {
-        href: "#Follow us on",
-        text: "Follow us on"
-    }
-]
 
