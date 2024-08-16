@@ -22,21 +22,21 @@ const Header = () => {
             </div>
             <div className='flex gap-8 items-center relative max-lg:flex-row-reverse'>
               <ul className={`flex items-center gap-7 max-lg:w-full max-lg:h-full max-lg:bg-green max-lg:items-center max-lg:justify-center max-lg:fixed top-0 right-0 max-lg:flex-col transition-all ${(nav) ? "max-lg:right-0 !bg-white transition-all z-[200]" : "max-lg:-right-[120%] transition-all"}`}>
-                <li>
+                <li onClick={() => setNav(!nav)}>
                   <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#home">Home</a></li>
-                <li>
+                <li onClick={() => setNav(!nav)}>
                   <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#label">Label</a>
                 </li>
-                <li>
+                <li onClick={() => setNav(!nav)}>
                   <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#about-us">About Us</a>
                 </li>
-                <li>
+                <li onClick={() => setNav(!nav)}>
                   <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#how-it">How It Works</a>
                 </li>
-                <li>
+                <li onClick={() => setNav(!nav)}>
                   <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#team">Team</a>
                 </li>
-                <li>
+                <li onClick={() => setNav(!nav)}>
                   <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#faq">FAQs</a>
                 </li>
                 <CommonButton className='!text-black bg-transparent !border-black !border-[1px] !border-solid hover:!bg-blue hover:!text-white hover:!border-transparent shadow-none md:hidden' text={"Sign Up"} />
@@ -67,7 +67,7 @@ const Header = () => {
             </div>
           </div>
           <div className='pt-6 max-w-[834px] mx-auto'>
-            <div className='flex items-center gap-4 sm:gap-6 justify-center flex-wrap'>
+            <div className='flex items-center gap-4 sm:gap-6 justify-center overflow-x-scroll'>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Accurate</div>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Scalable</div>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Secure Data</div>
