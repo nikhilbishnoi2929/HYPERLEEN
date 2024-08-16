@@ -1,6 +1,6 @@
 import React from 'react';
 import logoPage from '../assets/images/webp/logoPage.webp';
-import { FOOTER_CONTACT, FOOTER_FOLLOW, FOOTER_ITEM_FIRST, FOOTER_ITEMS, FOOTER_LINKS, FOOTER_POLICY, FOOTER_TEAM } from '../common/Helper';
+import { FOOTER_CONTACT, FOOTER_ITEMS, FOOTER_POLICY, FOOTER_TEAM } from '../common/Helper';
 import { FACEBOOK, IN_LINK, INSTAGRAM, TWITTER } from '../common/Icon';
 const Footer = () => {
     return (
@@ -9,19 +9,17 @@ const Footer = () => {
                 <div className='row pt-[160px] max-lg:pt-[120px] max-md:pt-[100px] max-sm:pt-[80px] pb-[56px]'>
                     <div className='lg:w-4/12 w-full px-3 flex'>
                         <div className='flex flex-col'>
-                           <a href="">  <img className='w-full h-[135px] max-w-[117px]' src={logoPage} alt="logoPage" /></a>
+                            <a href="">  <img className='w-full h-[135px] max-w-[117px]' src={logoPage} alt="logoPage" /></a>
                             <p className=' pt-5 max-sm:text-sm font-normal text-base leading-6 text-white lg:max-w-[279px] opacity-70'>Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.</p>
                         </div>
                     </div>
                     <div className='lg:w-2/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-end'>
                         <ul className='lg:pr-3'>
-                            {FOOTER_ITEM_FIRST.map((item, index) =>
-                                <li key={index}>
-                                    <a href={item.href} className='font-normal text-lg text-white leading-7'>
-                                        {item.text}
+                                <li>
+                                    <a href="" className='font-normal text-lg text-white leading-7'>
+                                    Quick Links
                                     </a>
                                 </li>
-                            )}
                             {FOOTER_ITEMS.map((item, index) =>
                                 <li key={index} className=' pt-5'>
                                     <a href={item.href} className='font-normal text-base hover:opacity-100 custom_Duration text-white leading-6 opacity-70'>
@@ -33,13 +31,11 @@ const Footer = () => {
                     </div>
                     <div className='lg:w-1/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-end'>
                         <ul>
-                            {FOOTER_LINKS.map((item, index) =>
-                                <li key={index}>
-                                    <a href={item.href} className='font-normal text-lg text-white leading-7'>
-                                        {item.text}
-                                    </a>
-                                </li>
-                            )}
+                            <li>
+                                <a href='' className='font-normal text-lg text-white leading-7'>
+                                    Links
+                                </a>
+                            </li>
                             {FOOTER_TEAM.map((item, index) =>
                                 <li key={index} className=' pt-5'>
                                     <a href={item.href} className='hover:opacity-100 custom_Duration font-normal text-base text-white leading-6 opacity-70'>
@@ -51,13 +47,11 @@ const Footer = () => {
                     </div>
                     <div className='lg:w-3/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-center'>
                         <ul className='lg:pl-2'>
-                            {FOOTER_POLICY.map((item, index) =>
-                                <li key={index}>
-                                    <a href={item.href} className='text-nowrap font-normal text-lg text-white leading-7'>
-                                        {item.text}
+                                  <li>
+                                    <a href='' className='text-nowrap font-normal text-lg text-white leading-7'>
+                                    Policy
                                     </a>
                                 </li>
-                            )}
                             {FOOTER_CONTACT.map((item, index) =>
                                 <li key={index} className=' pt-5'>
                                     <a href={item.href} className='hover:opacity-100 custom_Duration text-nowrap font-normal text-base text-white leading-6 opacity-70'>
@@ -70,13 +64,11 @@ const Footer = () => {
                     <div className='lg:w-2/12 md:w-3/12 sm:w-full w-6/12 max-lg:pt-8 px-3 flex lg:justify-end'>
                         <div className=' flex-col flex'>
                             <ul>
-                                {FOOTER_FOLLOW.map((item, index) =>
-                                    <li key={index}>
-                                        <a href={item.href} className='font-normal text-lg text-white leading-7'>
-                                            {item.text}
-                                        </a>
-                                    </li>
-                                )}
+                                <li>
+                                    <a href='' className='font-normal text-lg text-white leading-7'>
+                                        Follow us on
+                                    </a>
+                                </li>
                             </ul>
                             <div className=' pt-5 gap-3 max-sm:gap-5 max-sm:flex-col flex'>
                                 <div className=' flex gap-3 max-sm:gap-5'>

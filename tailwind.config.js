@@ -43,6 +43,7 @@ module.exports = {
         buttonShdow: "4px 4px 20px 0px #084CAF4D",
         overviewShadow:
           "-9.41px 9.41px 42.77px -22.24px #6F69F280, 9.41px -9.84px 42.77px -22.24px #084CAF33",
+          imageCard: '-9.41px 9.41px 42.77px -22.24px #6F69F280, 9.41px -9.84px 42.77px -22.24px #084CAF33',
       },
       backgroundImage: {
         footerBg: `url("./assets/images/webp/footerBg.webp")`,
