@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import pageLogo from '../assets/images/svg/logo.svg'
 import dottedArrow from '../assets/images/webp/dotted-arrow.webp'
 import headerEllipse from '../assets/images/webp/header-ellipse.webp'
@@ -10,6 +10,14 @@ const Header = () => {
     backgroundImage: `url(${heroSectionBg})`,
   }
   const [nav, setNav] = useState(false)
+
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = "auto"; // Re-enable scrolling
+    }
+  }, [nav]);
   return (
     <div className='max-w-[1920px] w-full mx-auto relative'>
       <div className='sm:py-4 py-2 border-b-[0.1px] border-solid border-gray'>
@@ -21,31 +29,72 @@ const Header = () => {
               </a>
             </div>
             <div className='flex gap-8 items-center relative max-lg:flex-row-reverse'>
-              <ul className={`flex items-center gap-7 max-lg:w-full max-lg:h-full max-lg:bg-green max-lg:items-center max-lg:justify-center max-lg:fixed top-0 right-0 max-lg:flex-col transition-all ${(nav) ? "max-lg:right-0 !bg-white transition-all z-[200]" : "max-lg:-right-[120%] transition-all"}`}>
-                <li onClick={() => setNav(!nav)}>
-                  <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#home">Home</a></li>
-                <li onClick={() => setNav(!nav)}>
-                  <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#label">Label</a>
-                </li>
-                <li onClick={() => setNav(!nav)}>
-                  <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#about-us">About Us</a>
-                </li>
-                <li onClick={() => setNav(!nav)}>
-                  <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#how-it">How It Works</a>
-                </li>
-                <li onClick={() => setNav(!nav)}>
-                  <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#team">Team</a>
-                </li>
-                <li onClick={() => setNav(!nav)}>
-                  <a className='!transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full' href="#faq">FAQs</a>
-                </li>
-                <CommonButton className='!text-black bg-transparent !border-black !border-[1px] !border-solid hover:!bg-blue hover:!text-white hover:!border-transparent shadow-none md:hidden' text={"Sign Up"} />
-                <CommonButton text={"Contact Us"} className={'md:hidden'} />
-              </ul>
-              <div className='w-8 h-7 flex flex-col justify-between lg:hidden z-[500]' onClick={() => setNav(!nav)}>
-                <span className={`w-full h-1 bg-black rounded-sm`}></span>
-                <span className={`w-full h-1 bg-black rounded-sm`}></span>
-                <span className={`w-full h-1 bg-black rounded-sm`}></span>
+              <div className="flex gap-8 items-center relative max-lg:flex-row-reverse">
+                <ul
+                  className={`flex items-center gap-7 max-lg:w-full max-lg:h-full max-lg:bg-green max-lg:items-center max-lg:justify-center max-lg:fixed top-0 right-0 max-lg:flex-col transition-all ${nav
+                    ? "max-lg:right-0 bg-white z-[200]" // When nav is open
+                    : "max-lg:-right-[120%]" // When nav is closed
+                    }`}
+                >
+                  <li onClick={() => setNav(false)}>
+                    <a
+                      className="transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full"
+                      href="#home"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li onClick={() => setNav(false)}>
+                    <a
+                      className="transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full"
+                      href="#label"
+                    >
+                      Label
+                    </a>
+                  </li>
+                  <li onClick={() => setNav(false)}>
+                    <a
+                      className="transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full"
+                      href="#about-us"
+                    >
+                      About Us
+                    </a>
+                  </li>
+                  <li onClick={() => setNav(false)}>
+                    <a
+                      className="transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full"
+                      href="#how-it"
+                    >
+                      How It Works
+                    </a>
+                  </li>
+                  <li onClick={() => setNav(false)}>
+                    <a
+                      className="transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full"
+                      href="#team"
+                    >
+                      Team
+                    </a>
+                  </li>
+                  <li onClick={() => setNav(false)}>
+                    <a
+                      className="transition-all before:transition-all text-gray relative hover:text-blue before:border-b-[1px] before:mt-[3px] before:w-0 before:absolute before:top-0 before:left-0 before:h-full before:border-solid before:border-blue hover:before:w-full"
+                      href="#faq"
+                    >
+                      FAQs
+                    </a>
+                  </li>
+                  <CommonButton className='!text-black bg-transparent !border-black !border-[1px] !border-solid hover:!bg-blue hover:!text-white hover:!border-transparent shadow-none md:hidden' text={"Sign Up"} />
+                  <CommonButton text={"Contact Us"} className={"md:hidden"} />
+                </ul>
+                <div
+                  className="w-8 h-7 flex flex-col justify-between lg:hidden z-[500]"
+                  onClick={() => setNav(!nav)}
+                >
+                  <span className="w-full h-1 bg-black rounded-sm"></span>
+                  <span className="w-full h-1 bg-black rounded-sm"></span>
+                  <span className="w-full h-1 bg-black rounded-sm"></span>
+                </div>
               </div>
               <div className='flex items-center gap-3'>
                 <CommonButton className='!text-black bg-transparent !border-black !border-[1px] !border-solid hover:!bg-blue hover:!text-white hover:!border-transparent shadow-none max-md:hidden' text={"Sign Up"} />
@@ -67,7 +116,7 @@ const Header = () => {
             </div>
           </div>
           <div className='pt-6 max-w-[834px] mx-auto'>
-            <div className='flex items-center gap-4 sm:gap-6 justify-center max-lg:justify-start overflow-x-scroll'>
+            <div className='flex items-center gap-4 sm:gap-6 justify-center max-lg:justify-start max-lg:overflow-x-scroll'>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Accurate</div>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Scalable</div>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Secure Data</div>

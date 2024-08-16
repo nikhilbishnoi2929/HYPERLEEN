@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from "react";
 import imagePicker from '../assets/images/webp/image-picker.webp';
 import CommonButton from "../common/Button";
+import { PenIcon } from "../common/Icon";
 
 const ImagePicker = () => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     const [showPopup, setShowPopup] = useState(false);
-    const [fileName, setFileName] = useState(''); // New state for storing the file name
+    const [fileName, setFileName] = useState('');
 
     useEffect(() => {
         let timer;
         if (showPopup) {
             timer = setTimeout(() => {
                 setShowPopup(false);
-            }, 2000); // Hide the popup after 2 seconds
+            }, 2000);
         }
 
-        return () => clearTimeout(timer); // Clear the timeout if the component unmounts
+        return () => clearTimeout(timer);
     }, [showPopup]);
 
     const handleFileChange = (event) => {
@@ -31,7 +32,7 @@ const ImagePicker = () => {
             reader.onload = (event) => {
                 setData(event.target.result);
                 setLoading(false);
-                setFileName(files[0].name); // Set the file name to the input field
+                setFileName(files[0].name);
             };
 
             reader.readAsDataURL(files[0]);
@@ -42,7 +43,7 @@ const ImagePicker = () => {
         setData(null);
         setError(null);
         setShowPopup(false);
-        setFileName(''); // Clear the file name from the input field
+        setFileName('');
     };
 
     const handleFileInputClick = () => {
@@ -71,27 +72,29 @@ const ImagePicker = () => {
             />
 
             <div className="relative w-full h-[200px] bg-[#F2F2F2] rounded-xl overflow-hidden p-4 sm:p-5">
-                {!data && !loading && (
-                    <div className="flex items-center justify-center w-full h-full overflow-hidden rounded-xl">
-                        <img src={imagePicker} className="cursor-pointer w-full h-full" onClick={handleFileInputClick} alt="imagePicker" />
-                    </div>
-                )}
+                <div className="w-full h-full bg-white rounded-xl">
+                    {!data && !loading && (
+                        <div className="flex items-center justify-center w-full h-full overflow-hidden rounded-xl">
+                            <img src={imagePicker} className="cursor-pointer w-full h-full" onClick={handleFileInputClick} alt="imagePicker" />
+                        </div>
+                    )}
 
-                {loading && (
-                    <div className="flex items-center justify-center w-full h-full">
-                        <span>Loading...</span>
-                    </div>
-                )}
+                    {loading && (
+                        <div className="flex items-center justify-center w-full h-full">
+                            <span>Loading...</span>
+                        </div>
+                    )}
 
-                {data && !loading && (
-                    <div className="absolute inset-0 w-full h-full">
-                        <img
-                            src={data}
-                            alt="Selected"
-                            className="object-cover w-full h-full"
-                        />
-                    </div>
-                )}
+                    {data && !loading && (
+                        <div className="w-full h-full">
+                            <img
+                                src={data}
+                                alt="Selected"
+                                className="object-cover w-full h-full rounded-xl"
+                            />
+                        </div>
+                    )}
+                </div>
             </div>
 
             {error && (
@@ -101,8 +104,8 @@ const ImagePicker = () => {
             )}
 
             {showPopup && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
-                    <div className="bg-white p-6 rounded-lg shadow-lg flex items-center">
+                <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+                    <div className="bg-white p-6 rounded-lg shadow-lg flex items-center max-w-[90%] sm:max-w-[400px]">
                         <svg
                             className="w-12 h-12 text-green-500 mr-4"
                             xmlns="http://www.w3.org/2000/svg"
@@ -121,16 +124,15 @@ const ImagePicker = () => {
                     </div>
                 </div>
             )}
-
             <div>
-                <input
-                    type="text"
-                    placeholder="Car."
-                    value={fileName} // Bind the input field value to the file name
-                    className="h-12 sm:h-[81px] w-full px-4 py-3 border-solid border-[0.5px] outline-none border-[#4E4E4E] mt-5 mb-5 sm:mb-9 rounded-[12px]"
-                    readOnly // Make the input field read-only
-                />
-
+                <div className='border p-4 rounded-lg border-grey mt-4 mb-9 border-gray'>
+                    <div className='flex items-center gap-3'>
+                        <div>
+                            <span className='text-black opacity-40 m-0 flex-grow w-fit'>{fileName || 'Car...'}</span>
+                        </div>
+                        <PenIcon />
+                    </div>
+                </div>
                 <div className="flex space-x-3">
                     <CommonButton
                         type="button"
