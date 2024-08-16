@@ -43,7 +43,7 @@ const Header = () => {
                 <CommonButton text={"Contact Us"} className={'md:hidden'} />
               </ul>
               <div className='w-8 h-7 flex flex-col justify-between lg:hidden z-[500]' onClick={() => setNav(!nav)}>
-                <span className={`w-full h-1 bg-black rounded-sm`}></span>
+                <span className={`w-full h-1 bg-black rounded-sm ${(setNav===false)?"absolute rotate-90":""}`}></span>
                 <span className={`w-full h-1 bg-black rounded-sm`}></span>
                 <span className={`w-full h-1 bg-black rounded-sm`}></span>
               </div>
@@ -74,7 +74,7 @@ const Header = () => {
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Labeling Solutions</div>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Quality Work</div>
             </div>
-            <h1 className='sm:text-5xl text-4xl md:text-6xl lg:text-12xl font-medium font_gilroy_medium md:leading-[80px] text-center pt-8 sm:pt-11'>Transform Your <span className='text-blue font-gilroy'>Data into AI</span> Insights</h1>
+            <h1 className='sm:text-5xl text-3xl md:text-6xl lg:text-12xl font-medium font_gilroy_medium md:leading-[80px] text-center pt-8 sm:pt-11'>Transform Your <span className='text-blue font-gilroy'>Data into AI</span> Insights</h1>
             <p className='text-base leading-6 text-gray mx-auto max-w-[634px] pt-5 text-center'>Unlock the full potential of your AI models with our premium data labeling services. Our expert annotators ensure your data is meticulously labeled, enabling superior performance and insights.</p>
             <div className='flex items-center gap-3 pt-7 sm:pt-10 justify-center'>
               <CommonButton className='font-normal font_gilroy_regular text-lg leading-7 text-white w-[151px] h-[55px] bg-blue rounded-[100px] shadow-buttonShadow ' text={'Get Started'} />
