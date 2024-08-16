@@ -27,6 +27,7 @@ module.exports = {
         blue: "#084CAF",
         gray: "#4E4E4E",
         light_grey: "#0101010D",
+        headerIcons: "#EBEBFD",
       },
       fontFamily: {
         gilroy: ["Gilroy", "sans-serif"],
@@ -34,7 +35,6 @@ module.exports = {
       fontSize: {
         "11xl": "32px",
         "12xl": "80px",
-        "10xl": "16px",
       },
       boxShadow: {
         mediaIcon: "0px 4px 4px 0px #00000040",
@@ -50,11 +50,7 @@ module.exports = {
         ourTeam: 'url("./assets/images/webp/our-team-img.webp")',
       },
       backgroundSize: {
-        "100%": "100% 100%",
         full: "100% 100%",
-      },
-      backgroundColor: {
-        headerIcons: "#EBEBFD",
       },
     },
   },

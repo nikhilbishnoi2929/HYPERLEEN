@@ -4,7 +4,7 @@ import { FOOTER_CONTACT, FOOTER_ITEMS, FOOTER_POLICY, FOOTER_TEAM } from '../com
 import { FACEBOOK, IN_LINK, INSTAGRAM, TWITTER } from '../common/Icon';
 const Footer = () => {
     return (
-        <div className='bg-footerBg bg-100% max-lg:bg-cover bg-no-repeat'>
+        <div className='bg-footerBg bg-full max-lg:bg-cover bg-no-repeat'>
             <div className='container max-w-[1164px] mx-auto px-3'>
                 <div className='row pt-[160px] max-lg:pt-[120px] max-md:pt-[100px] max-sm:pt-[80px] pb-[56px]' data-aos="flip-left">
                     <div className='lg:w-4/12 w-full px-3 flex' >
