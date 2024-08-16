@@ -6,8 +6,8 @@ const Footer = () => {
     return (
         <div className='bg-footerBg bg-100% max-lg:bg-cover bg-no-repeat'>
             <div className='container max-w-[1164px] mx-auto px-3'>
-                <div className='row pt-[160px] max-lg:pt-[120px] max-md:pt-[100px] max-sm:pt-[80px] pb-[56px]'>
-                    <div className='lg:w-4/12 w-full px-3 flex'>
+                <div className='row pt-[160px] max-lg:pt-[120px] max-md:pt-[100px] max-sm:pt-[80px] pb-[56px]' data-aos="flip-left">
+                    <div className='lg:w-4/12 w-full px-3 flex' >
                         <div className='flex flex-col'>
                             <a href="">  <img className='w-full h-[135px] max-w-[117px]' src={logoPage} alt="logoPage" /></a>
                             <p className=' pt-5 max-sm:text-sm font-normal text-base leading-6 text-white lg:max-w-[279px] opacity-70'>Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.</p>

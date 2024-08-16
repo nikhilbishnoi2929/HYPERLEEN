@@ -8,7 +8,7 @@ const Label = () => {
     <div className='common_padding' id='label'>
       <div className="container">
         <div className="row mx-auto items-center lg:items-end">
-          <div className="w-full md:w-1/2 lg:w-5/12 md:pr-4 max-md:flex max-md:justify-center">
+          <div className="w-full md:w-1/2 lg:w-5/12 md:pr-4 max-md:flex max-md:justify-center" data-aos="fade-right">
             <div className='max-w-[600px] max-md:max-w-[541px] max-md:w-full'>
               <h2 className="font-gilroy font_gilroy_medium text-3xl sm:text-5xl md:leading-[57px] max-w-[460px] max-md:text-center max-md:mx-auto">
                 Add <span className="text-blue">Label</span> of an Image
@@ -26,7 +26,7 @@ const Label = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:w-1/2 lg:w-7/12 flex justify-center md:justify-end md:pl-4">
+          <div className="w-full md:w-1/2 lg:w-7/12 flex justify-center md:justify-end md:pl-4" data-aos="fade-left">
             <div className='w-full lg:min-h-[509px] lg:max-w-[598px] relative max-md:max-w-[541px]'>
               <img className='pointer-events-none shadow-overviewShadow rounded-2xl lg:max-w-[399px] w-full mt-8' src={overviewImg1} alt="overviewImg1" />
               <img className='absolute right-0 top-0 pointer-events-none lg:max-w-[191px] w-full rounded-2xl shadow-overviewShadow lg:h-[241px] max-lg:hidden' src={overviewImg2} alt="overviewImg2" />

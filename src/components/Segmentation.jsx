@@ -14,14 +14,14 @@ const Segmentation = () => {
           In the realm of sentiment analysis, human judgment plays a crucial role. While our methods may not be extravagant, they are designed to ensure precise and reliable results.
         </p>
         <div className="row lg:mt-10 items-center mx-auto max-sm:gap-5 max-lg:gap-12 max-lg:flex-col-reverse">
-          <div className="w-full lg:w-1/2 lg:pr-3">
+          <div className="w-full lg:w-1/2 lg:pr-3" data-aos="fade-right">
             <h2 className='font_gilroy_semibold sm:font-semibold text-11xl leading-[43px] w-full max-lg:text-center'>Image Segmentation </h2>
             <p className="text-gray pt-2 sm:pt-4 max-w-[540px] max-lg:text-center max-lg:mx-auto">
               Image segmentation is the process of partitioning an image into multiple segments to simplify its representation and make it more meaningful. This technique is essential for identifying and analyzing objects within an image, such as cars in autonomous driving applications.
             </p>
             <CommonButton text={"Learn More"} className={"lg:mt-12 mt-7 max-lg:mx-auto"} />
           </div>
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2" data-aos="fade-left">
             <div className='w-full flex justify-center lg:justify-end overflow-hidden'>
               <div className='relative'>
                 <img src={segmentationImg} className='max-w-[502px] w-full' alt="segmentationImg" />

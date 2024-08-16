@@ -14,7 +14,7 @@ const Team = () => {
           Meet our dedicated team of experts ensuring precision and quality in every data labeling task.
         </p>
         <div className='row mt-[58px] justify-center'>
-          <div className='lg:w-1/2 px-3'>
+          <div className='lg:w-1/2 px-3' data-aos="fade-right">
             <div className='max-w-[560px] rounded-2xl relative'>
               <div className='shadow-mediaIcon absolute top-0 right-0 border-t-[0.5px] border-r-[0.5px] border-[#084CAF52] max-w-12 py-4 px-2'>
                 <a href='https://www.linkedin.com/login' target='_blank' className='size-8 bg-blue flex items-center justify-center rounded-full'>
@@ -49,7 +49,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div className='lg:w-1/2 px-3 max-lg:mt-3'>
+          <div className='lg:w-1/2 px-3 max-lg:mt-3'  data-aos="fade-left"> 
             <div className='max-w-[560px] rounded-2xl relative'>
               <div className='shadow-mediaIcon absolute top-0 right-0 border-t-[0.5px] border-r-[0.5px] border-[#084CAF52] max-w-12 py-4 px-2'>
                 <a href='https://www.linkedin.com/login' target='_blank' className='size-8 bg-blue flex items-center justify-center rounded-full'>

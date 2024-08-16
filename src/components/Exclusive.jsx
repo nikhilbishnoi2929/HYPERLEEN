@@ -39,7 +39,7 @@ const Exclusive = () => {
     return (
         <div className='container max-w-[1140px] mx-auto px-3'>
             <div className='flex justify-center pt-[180px] max-lg:pt-[120px] max-md:pt-[90px] max-sm:pt-16 pb-[29px]'>
-                <div className='flex flex-col text-center'>
+                <div className='flex flex-col text-center' data-aos="flip-right">
                     <h2 className='font_gilroy_medium font-medium text-5xl max-lg:text-4xl max-sm:text-2xl max-sm:leading-6 leading-[57px] text-black'>
                         Get in touch with <span className='text-blue'>Hyperleen</span>
                     </h2>

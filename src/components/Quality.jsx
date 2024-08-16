@@ -22,7 +22,7 @@ const Quality = () => {
         </div>
       </div>
       <div className='flex gap-5 lg:pt-24 pt-5 max-xl:flex-wrap justify-center xl:justify-start relative'>
-        <div className='xl:max-w-[326px] max-xl:max-w-[449px] w-full h-full max-h-[384px] rounded-[16px] bg-[#FFFFFF0A] border-[0.5px] border-blue p-[20px] max-sm:p-[10px]'>
+        <div className='xl:max-w-[326px] max-xl:max-w-[449px] w-full h-full max-h-[384px] rounded-[16px] bg-[#FFFFFF0A] border-[0.5px] border-blue p-[20px] max-sm:p-[10px]' data-aos="fade-right">
           <h4 className='font_gilroy_semibold font-semibold text-2xl leading-9 max-sm:leading-7 text-black max-sm:text-xl'>Step 01</h4>
           <h5 className='font_gilroy_semibold pt-2 font-semibold text-xl leading-7 text-gray '>Data Labeling</h5>
           <div className='flex max-sm:pt-4 sm:flex-col max-sm:justify-between'>
@@ -30,7 +30,7 @@ const Quality = () => {
             <img className='sm:pt-7 w-full sm:max-w-[285px] max-w-[150px]' src={dataLabelingCar} alt="dataLabeling" />
           </div>
         </div>
-        <div className='w-full max-w-[449px] h-full max-h-[404px] xl:mt-[52px] rounded-[16px] bg-[#FFFFFF0A] border-[0.5px] border-blue p-[20px] max-sm:p-[10px]'>
+        <div className='w-full max-w-[449px] h-full max-h-[404px] xl:mt-[52px] rounded-[16px] bg-[#FFFFFF0A] border-[0.5px] border-blue p-[20px] max-sm:p-[10px]' data-aos="zoom-in">
           <div className='flex justify-between'>
             <div className='flex flex-col'>
               <h4 className='font_gilroy_semibold font-semibold text-2xl leading-9 text-black max-sm:leading-7 max-sm:text-xl'>Step 02</h4>
@@ -60,7 +60,7 @@ const Quality = () => {
             <img className='w-full max-w-[156px] sm:max-w-[181px]' src={VerificationPie} alt="VerificationCar" />
           </div>
         </div>
-        <div className='xl:max-w-[326px] max-xl:max-w-[449px] w-full rounded-[16px] h-full max-h-[384px] xl:mt-[147px] bg-[#FFFFFF0A] border-[0.5px] border-blue p-[20px] max-sm:p-[10px]'>
+        <div className='xl:max-w-[326px] max-xl:max-w-[449px] w-full rounded-[16px] h-full max-h-[384px] xl:mt-[147px] bg-[#FFFFFF0A] border-[0.5px] border-blue p-[20px] max-sm:p-[10px]' data-aos="fade-left">
           <h4 className='font_gilroy_semibold max-sm:text-xl font-semibold text-2xl leading-9 text-black max-sm:leading-7'>Step 03</h4>
           <h5 className='font_gilroy_semibold pt-2 font-semibold text-xl leading-7 text-gray '>Data Labeling</h5>
           <p className='font-poppins font-normal text-base leading-6 text-gray xl:max-w-[281px] pt-[10px]'>Incorrectly labeled data is reviewed and relabeled correctly</p>

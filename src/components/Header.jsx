@@ -91,9 +91,9 @@ const Header = () => {
                   className="w-8 h-7 flex flex-col justify-between lg:hidden z-[500]"
                   onClick={() => setNav(!nav)}
                 >
-                  <span className="w-full h-1 bg-black rounded-sm"></span>
-                  <span className="w-full h-1 bg-black rounded-sm"></span>
-                  <span className="w-full h-1 bg-black rounded-sm"></span>
+                  <span className="w-full cursor-pointer h-1 bg-black rounded-sm"></span>
+                  <span className="w-full cursor-pointer h-1 bg-black rounded-sm"></span>
+                  <span className="w-full cursor-pointer h-1 bg-black rounded-sm"></span>
                 </div>
               </div>
               <div className='flex items-center gap-3'>

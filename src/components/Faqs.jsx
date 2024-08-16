@@ -14,9 +14,9 @@ const Faqs = () => {
                     <p className='font-normal text-base text-gray leading-6 max-sm:text-sm pt-4'>You have got Question. We have got Answer</p>
                 </div>
             </div>
-            <div className='z-30 max-w-[997px] mx-auto lg:pt-10 max-md:pt-8 max-sm:pt-6 max-lg:pt-10 pt-14'>
+            <div className='z-30 max-w-[997px] mx-auto lg:pt-10 max-md:pt-8 max-sm:pt-6 max-lg:pt-10 pt-14' data-aos="zoom-in-down">
                 {FAQS.map((faq, index) => (
-                    <div
+                    <div 
                         key={index}
                         className={`overflow-hidden ease-linear ${activeIndex === index ? "z-30 bg-[#F3F6FB] rounded-[16px]" : "border-gray rounded-[16px] border-[0.5px]"} mt-5`}
                     >
@@ -24,7 +24,7 @@ const Faqs = () => {
                             onClick={() => toggleAccordion(index)}
                             className={`${activeIndex === index ? "z-30 lg:p-[23px] md:p-[19px] p-[15px]" : "p-4 lg:p-[23px] bg-white"} w-full text-left bg-blue flex items-center justify-between border-[0.5px] border-[#FFFFFF4D] transition ease-in-out`}
                         >
-                            <span className={`${activeIndex === index ? "text-white" : "text-black"} font-medium max-sm:text-sm max-sm:leading-5 text-base z-30 text-10xl leading-6`}>{faq.question}</span>
+                            <span className={`${activeIndex === index ? "text-white" : "text-black"} font-medium max-sm:text-sm max-sm:leading-5 text-base z-30 text-10xl leading-6`} >{faq.question}</span>
                             <span className="float-right z-30">
                                 <div className={`${activeIndex === index ? "transform rotate-180 hidden" : ""} flex justify-center items-center size-6 bg-blue rounded-[50px]`}>
                                     <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ const Faqs = () => {
                                 </div>
                             </span>
                         </button>
-                        <div
+                        <div 
                             ref={el => contentRefs.current[index] = el}
                             className={`transition-max-height duration-500 ease-in-out overflow-hidden ${activeIndex === index ? "max-h-[1000px]" : "max-h-0 py-0"}`}
                             style={{
