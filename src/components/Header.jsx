@@ -43,7 +43,7 @@ const Header = () => {
                 <CommonButton text={"Contact Us"} className={'md:hidden'} />
               </ul>
               <div className='w-8 h-7 flex flex-col justify-between lg:hidden z-[500]' onClick={() => setNav(!nav)}>
-                <span className={`w-full h-1 bg-black rounded-sm ${(setNav===false)?"absolute rotate-90":""}`}></span>
+                <span className={`w-full h-1 bg-black rounded-sm`}></span>
                 <span className={`w-full h-1 bg-black rounded-sm`}></span>
                 <span className={`w-full h-1 bg-black rounded-sm`}></span>
               </div>
@@ -67,7 +67,7 @@ const Header = () => {
             </div>
           </div>
           <div className='pt-6 max-w-[834px] mx-auto'>
-            <div className='flex items-center gap-4 sm:gap-6 justify-center overflow-x-scroll'>
+            <div className='flex items-center gap-4 sm:gap-6 justify-center max-lg:justify-start overflow-x-scroll'>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Accurate</div>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Scalable</div>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Secure Data</div>
@@ -87,5 +87,4 @@ const Header = () => {
     </div>
   )
 }
-
 export default Header

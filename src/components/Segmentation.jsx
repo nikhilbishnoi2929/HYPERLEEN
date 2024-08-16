@@ -7,7 +7,7 @@ const Segmentation = () => {
   return (
     <div className='common_padding'>
       <div className='container'>
-        <h2 className="font_gilroy_medium text-4xl sm:text-5xl md:leading-[57px] max-w-[506px] mx-auto text-center">
+        <h2 className="font_gilroy_medium text-3xl sm:text-5xl md:leading-[57px] max-w-[506px] mx-auto text-center">
           Image <span className="text-blue">Segmentation and </span>  Verification
         </h2>
         <p className="text-gray pt-4 pb-6 max-w-[740px] mx-auto text-center">
