@@ -13,9 +13,9 @@ const Header = () => {
 
   useEffect(() => {
     if (nav) {
-      document.body.style.overflow = "hidden"; // Disable scrolling
+      document.body.style.overflow = "hidden"; 
     } else {
-      document.body.style.overflow = "auto"; // Re-enable scrolling
+      document.body.style.overflow = "auto"; 
     }
   }, [nav]);
   return (
@@ -31,9 +31,9 @@ const Header = () => {
             <div className='flex gap-8 items-center relative max-lg:flex-row-reverse'>
               <div className="flex gap-8 items-center relative max-lg:flex-row-reverse">
                 <ul
-                  className={`flex items-center gap-7 max-lg:w-full max-lg:h-full max-lg:bg-green max-lg:items-center max-lg:justify-center max-lg:fixed top-0 right-0 max-lg:flex-col transition-all ${nav
-                    ? "max-lg:right-0 bg-white z-[200]" // When nav is open
-                    : "max-lg:-right-[120%]" // When nav is closed
+                  className={`flex items-center gap-7 max-lg:w-full max-lg:h-full max-lg:bg-green max-lg:items-center max-lg:justify-center max-lg:fixed top-0 right-0 max-lg:flex-col transition-all duration-300 ${nav
+                    ? "max-lg:right-0 bg-white z-[200]" 
+                    : "max-lg:-right-[120%]"
                     }`}
                 >
                   <li onClick={() => setNav(false)}>
@@ -116,7 +116,7 @@ const Header = () => {
             </div>
           </div>
           <div className='pt-6 max-w-[834px] mx-auto'>
-            <div className='flex items-center gap-4 sm:gap-6 justify-center max-lg:justify-start max-lg:overflow-x-scroll'>
+            <div className='flex items-center gap-4 sm:gap-6 justify-center max-lg:justify-start max-lg:overflow-x-auto mb-1'>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Accurate</div>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Scalable</div>
               <div className='text-nowrap text-blue px-6 py-[10px] border-[0.5px] border-blue border-solid bg-headerIcons rounded-[122px] flex justify-center items-center'>Secure Data</div>
