@@ -10,7 +10,7 @@ const System = () => {
       <div className='container'>
         <div className='row items-end justify-center'>
           <div className='lg:w-1/2 px-3'>
-            <h1 className='font_gilroy_medium md:text-5xl text-4xl md:leading-[57px] leading-10 text-black'>How the <span className='text-blue'>System</span> Works</h1>
+            <h1 className='font_gilroy_medium md:text-5xl text-3xl md:leading-[57px] leading-10 text-black'>How the <span className='text-blue'>System</span> Works</h1>
             <p className='text-gray max-w-[528px] pt-4'>Effortless Data Labeling: Streamlined, Accurate, and Scalable Solutions for AI Development</p>
             <div className='p-5 rounded-2xl border-[0.5px] border-light_blue relative max-w-[400px] mt-10 shadow-imageCard'>
               <h1 className='font-semibold text-black'>Project Request</h1>
