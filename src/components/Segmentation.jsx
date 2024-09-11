@@ -2,7 +2,6 @@ import React from 'react'
 import CommonButton from '../common/Button'
 import Verification from '../components/Verification'
 import segmentationImg from '../assets/images/webp/selected_car.webp'
-
 const Segmentation = () => {
   return (
     <div className='py-20 common_padding'>

@@ -27,14 +27,12 @@ const Exclusive = () => {
             setEmail('');
         }
     };
-
     const handleChange = (e) => {
         setEmail(e.target.value);
         if (error) {
             setError('');
         }
     };
-
     return (
         <div className='container max-w-[1140px] mx-auto px-3'>
             <div className='flex justify-center pt-[180px] max-lg:pt-[120px] max-md:pt-[90px] max-sm:pt-16 pb-[29px]'>

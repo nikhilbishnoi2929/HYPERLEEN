@@ -10,5 +10,4 @@ const CommonButton = ({ text, className, onClick, href }) => {
         </a>
     );
 };
-
 export default CommonButton;

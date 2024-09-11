@@ -3,7 +3,6 @@ import projectReq from '../assets/images/webp/req-project.webp'
 import CommonButton from '../common/Button'
 import { PenIcon } from '../common/Icon'
 import WorkflowSteps from './Timeline'
-
 const System = () => {
   return (
     <div className='lg:pt-[100px] md:pt-16 pt-0' id='how-it'>
@@ -29,7 +28,6 @@ const System = () => {
             </div>
             <div className='max-sm:mt-5 max-lg:-mt-16'> <CommonButton text={'Get Started Now'} /></div>
           </div>
-
           <div className='lg:w-1/2 px-3 max-lg:mt-5' data-aos="fade-left">
             <WorkflowSteps />
           </div>

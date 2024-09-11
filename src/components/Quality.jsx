@@ -70,11 +70,9 @@ const Quality = () => {
             <img className='max-sm:max-w-[150px] w-full max-w-[258px] sm:pt-[6px]' src={dataLabelingQuiche} alt="dataLabeling" />
           </div>
         </div>
-
         <img src={arrowDot} className='top-[22px] max-xl:hidden z-0 left-[323px] absolute' alt="arrowDot" />
         <img src={arrowDotTwo} className='top-[76px] max-xl:hidden z-0 right-[64px] absolute' alt="arrowDot" />
       </div>
-
     </div>
   )
 }
