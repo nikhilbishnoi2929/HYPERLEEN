@@ -11,9 +11,37 @@ const Footer = () => {
                         <div className='flex flex-col'>
                             <a href="">  <img className='w-full h-[135px] max-w-[117px]' src={logoPage} alt="logoPage" /></a>
                             <p className=' pt-5 max-sm:text-sm font-normal text-base leading-6 text-white lg:max-w-[279px] opacity-70'>Lorem ipsum dolor sit amet consectetur. Massa ac commodo duis amet et ut. Tincidunt faucibus integer risus id at.</p>
+                            <div>
+                            <div className='pt-5 flex gap-5'>
+                                <div className=' flex gap-3 max-sm:gap-5'>
+                                    <a href="https://www.facebook.com/" target='blank_'>
+                                        <div className='size-[32px] rounded-[50px] border-[1px] border-textBlue hover:border-white custom_Duration hover_Effect bg-white flex justify-center items-center'>
+                                            <FACEBOOK />
+                                        </div>
+                                    </a>
+                                    <a href="https://x.com/?lang=en" target='blank_'>
+                                        <div className='size-[32px] rounded-[50px] border-[1px] border-textBlue hover:border-white custom_Duration hover_Effect bg-white flex justify-center items-center'>
+                                            <TWITTER />
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className='flex gap-3 max-sm:gap-5'>
+                                    <a href="https://www.linkedin.com/login" target='blank_'>
+                                        <div className='size-[32px] hover:border-white custom_Duration hover_Effect rounded-[50px] border-[1px] border-textBlue bg-white flex justify-center items-center'>
+                                            <IN_LINK />
+                                        </div>
+                                    </a>
+                                    <a href="https://www.instagram.com/" target='blank_'>
+                                        <div className='size-[32px] hover:border-white custom_Duration hover_Effect rounded-[50px] border-[1px] border-textBlue bg-white flex justify-center items-center'>
+                                            <INSTAGRAM />
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
                         </div>
                     </div>
-                    <div className='lg:w-2/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-end'>
+                    <div className='lg:w-2/12 md:w-4/12 sm:w-6/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-end'>
                         <ul className='lg:pr-3'>
                                 <li>
                                     <a href="" className='font-normal text-lg text-white leading-7'>
@@ -29,7 +57,7 @@ const Footer = () => {
                             )}
                         </ul>
                     </div>
-                    <div className='lg:w-1/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-end'>
+                    <div className='lg:w-1/12 md:w-4/12 sm:w-6/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-end'>
                         <ul>
                             <li>
                                 <a href='' className='font-normal text-lg text-white leading-7'>
@@ -45,7 +73,7 @@ const Footer = () => {
                             )}
                         </ul>
                     </div>
-                    <div className='lg:w-3/12 md:w-3/12 sm:w-4/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-center'>
+                    <div className='lg:w-3/12 md:w-4/12 sm:w-6/12 w-6/12 max-lg:pt-8 px-3 flex lg:justify-center'>
                         <ul className='lg:pl-2'>
                                   <li>
                                     <a href='' className='text-nowrap font-normal text-lg text-white leading-7'>
@@ -61,7 +89,7 @@ const Footer = () => {
                             )}
                         </ul>
                     </div>
-                    <div className='lg:w-2/12 md:w-3/12 sm:w-full w-6/12 max-lg:pt-8 px-3 flex lg:justify-end'>
+                    <div className='lg:w-2/12 md:w-3/12 sm:w-full w-6/12 max-lg:pt-8 px-3 flex lg:justify-end max-lg:hidden'>
                         <div className=' flex-col flex'>
                             <ul>
                                 <li>

@@ -4,7 +4,7 @@ import ellipsImg from '../assets/images/webp/our-team-ellips.webp'
 import { FacebookLogo, InstgramLogo, LinkedinLogo, MailIcon, PhnCallImg } from '../common/Icon'
 const Team = () => {
   return (
-    <div className='bg-ourTeam bg-no-repeat bg-center md:bg-full bg-cover lg:py-[183px] max-sm:py-40 relative' id='team'>
+    <div className='lg:bg-ourTeam max-lg:bg-blue bg-no-repeat bg-center md:bg-full bg-cover py-[183px] max-lg:py-[130px] max-md:py-[90px] relative' id='team'>
       <div className='left-0 absolute z-0 top-0 lg:block hidden h-[1548px]'>
         <img src={ellipsImg} alt="ellips" width={313} className='h-full' />
       </div>
@@ -49,7 +49,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div className='lg:w-1/2 px-3 max-lg:mt-3'  data-aos="fade-left"> 
+          <div className='lg:w-1/2 px-3 max-lg:mt-3' data-aos="fade-left">
             <div className='max-w-[560px] rounded-2xl relative'>
               <div className='shadow-mediaIcon absolute top-0 right-0 border-t-[0.5px] border-r-[0.5px] border-[#084CAF52] max-w-12 py-4 px-2'>
                 <a href='https://www.linkedin.com/login' target='_blank' className='size-8 bg-blue flex items-center justify-center rounded-full'>

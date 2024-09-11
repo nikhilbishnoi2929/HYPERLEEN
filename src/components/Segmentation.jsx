@@ -5,7 +5,7 @@ import segmentationImg from '../assets/images/webp/selected_car.webp'
 
 const Segmentation = () => {
   return (
-    <div className='py-20 max-lg:py-10 max-md:py-0 max-md:pt-6'>
+    <div className='py-20 common_padding'>
       <div className='container'>
         <h2 className="font_gilroy_medium text-3xl sm:text-5xl md:leading-[57px] max-w-[506px] mx-auto text-center">
           Image <span className="text-blue">Segmentation and </span>  Verification
