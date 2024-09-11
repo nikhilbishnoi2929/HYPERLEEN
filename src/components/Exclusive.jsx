@@ -9,7 +9,6 @@ const Exclusive = () => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
     };
-
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!email) {
