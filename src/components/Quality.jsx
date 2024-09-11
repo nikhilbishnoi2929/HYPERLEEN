@@ -14,6 +14,7 @@ import checkMinus from '../assets/images/svg/crossMinus.svg';
 import arrowBottom from '../assets/images/svg/arrowBottom.svg'
 const Quality = () => {
   return (
+    
     <div className='container max-w-[1164px] px-3 mx-auto' id='about-us'>
       <div className='flex justify-center pt-[160px] max-lg:pt-[120px] max-md:pt-[80px] max-sm:pt-12 '>
         <div className='flex flex-col text-center'>

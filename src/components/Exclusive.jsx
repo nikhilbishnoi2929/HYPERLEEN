@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
-
 const Exclusive = () => {
     const [email, setEmail] = useState('');
     const [error, setError] = useState('');
-    
     const validateEmail = (email) => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
@@ -25,7 +23,7 @@ const Exclusive = () => {
                 timer: 1500
             });
             setEmail('');
-        }
+         }
     };
     const handleChange = (e) => {
         setEmail(e.target.value);
